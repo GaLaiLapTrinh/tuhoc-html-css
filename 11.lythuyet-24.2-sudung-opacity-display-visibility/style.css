@@ -1,0 +1,15 @@
+/* Xóa hết nội dung và làm theo video để nhớ nhé các bạn :) */
+/* Tuhoc.cc Chúc các bạn học tốt */
+img {
+  transition: 1.5s;
+}
+
+input:checked ~ img {
+  /* 1.Biến mất khỏi giao diện */
+  /* display: none; */
+  /* 2.Ẩn khỏi giao diện nhưng vẫn chiếm vị trí */
+  /* visibility: hidden; */
+  /* 3. Làm mờ đi sau đó ẩn hẳn khỏi giao diện*/
+  opacity: 0;
+  visibility: hidden;
+}
