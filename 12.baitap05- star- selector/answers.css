@@ -1,0 +1,9 @@
+/* 
+Thêm code CSS để toàn bộ các phần tử có : 
+1. chữ màu blue 
+2. font-size 30px 
+*/
+* {
+  color: blue;
+  font-size: 30px;
+}
