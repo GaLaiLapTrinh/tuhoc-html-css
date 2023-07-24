@@ -1,0 +1,14 @@
+h1 {
+  /* màu chữ Ctrl+/ */
+  color: blueviolet;
+  /* kiểu chữ  */
+  font-style: italic;
+  /* font chữ */
+  font-family: Arial, Helvetica, sans-serif;
+  /* chuyển hoa thường */
+  text-transform: uppercase;
+  /* căn giữa   */
+  text-align: center;
+  /* cỡ chữ */
+  font-size: 18px;
+}

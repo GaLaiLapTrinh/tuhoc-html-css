@@ -1,0 +1,20 @@
+#doan-van-2 {
+  color: red;
+  font-size: 20px;
+}
+
+h1 {
+  color: blue;
+}
+
+.demo {
+  color: yellow;
+}
+
+.demo2 {
+  font-size: 40px;
+}
+
+.item_ul_1 {
+  list-style: none;
+}

@@ -1,0 +1,7 @@
+h1 ~ h3 {
+  color: blue;
+}
+
+div ~ div {
+  color: red;
+}
