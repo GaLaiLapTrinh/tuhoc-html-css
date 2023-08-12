@@ -1,5 +1,5 @@
-Code và bài tập HTML CSS - Khóa học lập trình web online tại <a href="http://tuhoc.cc" target="_blank">tuhoc.cc</a>.  
-Nhóm thảo luận dành cho thành viên: <a href="http://dc.tuhoc.cc" target="_blank">http://dc.tuhoc.cc</a>.  
+Code và bài tập HTML CSS - Khóa học lập trình web online tại <a href="http://tuhoc.cc" target="_blank">tuhoc.cc</a>  
+Nhóm thảo luận dành cho thành viên: <a href="http://dc.tuhoc.cc" target="_blank">http://dc.tuhoc.cc</a>  
 Hãy truy cập vào <a href="http://tuhoc.cc" target="_blank">http://tuhoc.cc</a> để học thêm nhiều ngôn ngữ lập trình phổ biến khác!  
 
 
