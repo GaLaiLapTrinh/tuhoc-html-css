@@ -1,7 +1,7 @@
 # tuhoc-html-css
 Code và bài tập html css - Khóa học lập trình web online tại tuhoc.cc  
 Nhóm thảo luận dành cho thành viên: [http://dc.tuhoc.cc](http://dc.tuhoc.cc){:target="_blank"} .  
-Hãy truy cập vào [http://tuhoc.cc](http://tuhoc.cc){:target="_blank"} để học thêm nhiều ngôn ngữ lập trình phổ biến khác.
+Hãy truy cập vào [http://tuhoc.cc](http://tuhoc.cc){:target="_blank"} để học thêm nhiều ngôn ngữ lập trình phổ biến khác!
 
 
                             _oo0oo_
