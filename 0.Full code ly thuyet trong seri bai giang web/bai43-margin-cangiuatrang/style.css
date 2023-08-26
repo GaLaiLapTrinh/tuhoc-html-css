@@ -1,0 +1,22 @@
+body {
+  background-color: #ddd;
+}
+
+.container h1 {
+  font-size: 40px;
+}
+
+.container p {
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.container img {
+  max-width: 600px;
+}
+.container {
+  margin: 0 auto;
+  width: 700px;
+  background-color: yellow;
+  text-align: center;
+}

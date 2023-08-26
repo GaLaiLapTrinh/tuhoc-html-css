@@ -1,0 +1,11 @@
+h2 {
+  font-size: 30px;
+  width: 450px;
+  height: 80px;
+  background-color: yellow;
+}
+
+p {
+  width: 50%;
+  background-color: blue;
+}

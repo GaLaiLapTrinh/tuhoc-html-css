@@ -1,0 +1,8 @@
+.box1 {
+  width: 200px;
+  height: 200px;
+  /* border: 10px solid red; */
+  outline: 20px solid blue;
+  outline-offset: 10px;
+  margin: 40px;
+}
