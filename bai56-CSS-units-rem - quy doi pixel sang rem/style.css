@@ -1,0 +1,19 @@
+html {
+  font-size: 52.5%;
+}
+
+h1 {
+  font-size: 4.4rem;
+  /* 44/16 = ....  */
+}
+
+p {
+  font-size: 2.53rem;
+  /* 25.3/ 16 = ...  */
+}
+
+.box {
+  width: 22rem;
+  height: 18rem;
+  background-color: rgb(127, 127, 148);
+}
