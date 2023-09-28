@@ -1,0 +1,24 @@
+.box {
+  width: 400px;
+  height: 200px;
+  border: 5px dashed blue;
+  background-image: url(https://anhdep123.com/top-500-anh-cho-hai-huoc-bua-nhat-hanh-tinh/hinh-anh-hai-huoc-ve-cho/);
+  background-position: top right;
+  background-position: top left;
+  background-position: bottom left;
+  background-position: bottom right;
+  background-position: top;
+  background-position: bottom;
+  background-position: left;
+  background-position: right;
+  background-position: center;
+
+  background-position: -10% 0%;
+  background-repeat: no-repeat;
+  /* background-position: 0 0; */
+}
+
+img {
+  width: 60%;
+  margin-top: 50px;
+}

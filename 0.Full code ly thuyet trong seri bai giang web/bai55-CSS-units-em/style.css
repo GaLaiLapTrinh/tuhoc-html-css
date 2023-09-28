@@ -1,0 +1,28 @@
+/* 
+1.Thẻ cha và con không có font size 
+--> Lấy theo font-size root(HTML) 
+*/
+/* .child {
+  width: 10em;
+  height: 10em;
+  background-color: violet;
+}
+
+.parent {
+  font-size: 2em;
+} */
+
+.parent {
+  font-size: 10px;
+}
+
+.child {
+  /* 10px --> 2*10 = 20px  */
+  /* 20px --> 20*2 = 40px  */
+  /* 40px --> 40*2=80px  */
+
+  font-size: 2em;
+  width: 2em;
+  height: 2em;
+  background-color: violet;
+}

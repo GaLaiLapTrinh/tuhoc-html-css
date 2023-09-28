@@ -1,0 +1,17 @@
+body {
+  background-color: aqua;
+}
+
+.box {
+  color: yellow;
+  width: 250px;
+  height: 250px;
+  background-color: transparent;
+  background-color: red;
+  background-color: rgb(0, 0, 255, 0.5);
+  background-color: #727272;
+  background-color: currentColor;
+  margin: 45px;
+  padding: 20px;
+  border: 20px dotted red;
+}

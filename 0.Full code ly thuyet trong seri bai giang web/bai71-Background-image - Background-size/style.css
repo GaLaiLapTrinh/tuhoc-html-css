@@ -1,0 +1,12 @@
+.box {
+  width: 400px;
+  height: 100px;
+  border: 4px dotted red;
+  background-image: url(./bg/dog.jpg);
+  background-size: contain;
+  background-size: cover;
+  background-size: 200px;
+  background-size: 100%;
+  background-size: 100% 100%;
+  background-size: 200px 200px;
+}

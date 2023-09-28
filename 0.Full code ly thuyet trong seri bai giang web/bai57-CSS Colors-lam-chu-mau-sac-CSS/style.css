@@ -1,0 +1,32 @@
+h1 {
+  /* color: rgb(134, 32, 150); */
+  /* color: rgb(134 32 150); */
+  /* 0-255  */
+
+  /* kênh rgba */
+  /* color: rgb(255, 0, 0, 0.5); */
+  /* color: rgb(255 0 0 / 0.5);
+  background-color: blueviolet; */
+
+  color: #ff00ff;
+  color: #f0f;
+  color: #c2d;
+  color: #959595;
+}
+
+.box {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  color: pink;
+  /* background-color: currentColor; */
+  outline: 5px solid currentColor;
+  outline-offset: 5px;
+}
+
+.box_child {
+  /* xem lại bài 49 kế thừa */
+  width: 50px;
+  height: 50px;
+  background-color: currentColor;
+}

@@ -1,0 +1,9 @@
+.box {
+  height: 100vh;
+  background-image: url(./bg/lacay.png), url(./bg/small.jpg);
+  /* background-image: none; */
+  /* background-repeat: no-repeat; */
+  /* background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-repeat: repeat; */
+}

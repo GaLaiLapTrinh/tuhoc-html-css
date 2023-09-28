@@ -1,0 +1,21 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-family: "Roboto Slab", serif;
+}
+
+p {
+  /* font-weight: lighter; */
+  font-size: 40px;
+  line-height: 1.5;
+  line-height: 150%;
+  /* line-height: 24px; */
+}
+
+h1 {
+  height: 120px;
+  background-color: blue;
+  line-height: 110px;
+}

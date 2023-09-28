@@ -1,0 +1,12 @@
+.demo {
+  max-width: 70%;
+  /* mẹo căn giữa  */
+  display: block;
+  margin: 0 auto;
+}
+
+.box {
+  max-width: 700px;
+  background-color: cyan;
+  margin: 0 auto;
+}
