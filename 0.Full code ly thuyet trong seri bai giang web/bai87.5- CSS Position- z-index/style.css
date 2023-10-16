@@ -1,0 +1,31 @@
+.box {
+  /* căn text giữa các khối  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  /* position: absolute; */
+  position: relative;
+}
+
+.box1 {
+  width: 300px;
+  height: 300px;
+  background: red;
+  top: 50px;
+  z-index: 1;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background: blue;
+  z-index: 2;
+}
+
+.box3 {
+  width: 100px;
+  height: 100px;
+  background: green;
+  bottom: 50px;
+}

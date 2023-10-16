@@ -1,0 +1,16 @@
+.container {
+  height: 150px;
+  display: flex;
+  background-color: cyan;
+  align-items: flex-start;
+}
+
+.box {
+  background-color: blue;
+  border: 1px solid black;
+}
+
+.box2,
+.box3 {
+  align-self: flex-end;
+}

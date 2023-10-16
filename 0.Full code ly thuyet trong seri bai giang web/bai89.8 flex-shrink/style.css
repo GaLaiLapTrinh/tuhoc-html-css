@@ -1,0 +1,19 @@
+.container {
+  height: 150px;
+  display: flex;
+  background-color: cyan;
+  /* flex-wrap: wrap; */
+  /* overflow: auto; */
+}
+
+.box {
+  background-color: blue;
+  border: 1px solid black;
+  width: 30%;
+  /* flex-shrink: 0; */
+}
+
+.box1,
+.box2 {
+  flex-shrink: 1;
+}

@@ -1,0 +1,18 @@
+.container {
+  height: 150px;
+  display: flex;
+  background-color: cyan;
+}
+
+.box {
+  background-color: blue;
+  border: 1px solid black;
+}
+
+.box1,.box3{
+  flex-grow: 1;
+}
+
+.box2{
+  flex-grow: 0;
+}

@@ -1,0 +1,13 @@
+* {
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  background-color: cyan;
+  gap: 40px;
+}
+
+.box {
+  background-color: blue;
+}

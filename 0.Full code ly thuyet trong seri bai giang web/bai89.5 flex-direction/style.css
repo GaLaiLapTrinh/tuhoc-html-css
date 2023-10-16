@@ -1,0 +1,19 @@
+.box {
+  background-color: blue;
+  border: 1px solid black;
+}
+.container {
+  height: 200px;
+  display: flex;
+  background-color: cyan;
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* justify-content: flex-start; */
+  /* align-items: stretch; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  /* align-items: stretch; */
+  align-items: flex-start;
+}

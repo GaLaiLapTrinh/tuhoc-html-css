@@ -1,0 +1,20 @@
+.container {
+  height: 400px;
+  display: flex;
+  background-color: cyan;
+  /* flex-wrap: nowrap; */
+  flex-wrap: wrap;
+  /* flex-wrap: wrap-reverse; */
+  /* align-content: stretch; */
+  /* align-content: flex-start; */
+  /* align-content: flex-end; */
+  /* align-content: center; */
+  /* align-content: space-around; */
+  align-content: space-between;
+}
+
+.box {
+  width: 30%;
+  background-color: blue;
+  border: 1px solid black;
+}

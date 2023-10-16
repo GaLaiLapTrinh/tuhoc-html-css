@@ -1,0 +1,12 @@
+.content {
+  width: 400px;
+  height: 900px;
+  background: cyan;
+  overflow: auto;
+}
+
+h2 {
+  background: yellow;
+  position: sticky;
+  top: 0;
+}
