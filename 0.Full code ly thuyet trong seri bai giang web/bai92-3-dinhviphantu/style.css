@@ -1,0 +1,49 @@
+/* beauty CSS */
+.box1,
+.box4,
+.box5 {
+  background: aqua;
+}
+
+.box2,
+.box3 {
+  background: blue;
+}
+
+.box {
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  gap: 15px;
+  display: grid;
+  grid-template-columns: 100px repeat(2, 50px);
+  grid-template-rows: repeat(7, 50px);
+}
+
+/* .box1 {
+  grid-row-start: 1;
+  grid-row-end: -2;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.box5 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+} */
+
+.box1 {
+  /* grid-row-start: 1;
+  grid-row-end: -1; */
+
+  grid-row: 1 / -1;
+}
+
+.box2{
+  grid-column: span 2;
+  grid-row: span 3;
+}

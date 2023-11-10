@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- BEM -->
+    <!-- 
+        Cú pháp BEM: 
+        1. block 
+        .header, .footer, .card, .card-list...
+        2. element 
+        block__element: footer__logo, footer_desc, card__image 
+        3. modifier:
+            block__element--modifier: card__image--large, card__image--small
+            block--modifier : .modal--custom, .modal--fullscreen
+     -->
+    <!-- cách thông thường -->
+    <div class="container">
+        <div class="card">
+            <div class="image"></div>
+            <div class="title"></div>
+            <div class="desc"></div>
+            <div class="button">
+                <div class="button-primary"></div>
+                <div class="button-secondary"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- trường hợp 1 -->
+    <div class="container">
+        <div class="card">
+            <div class="card__image"></div>
+            <div class="card__title"></div>
+            <div class="card__desc"></div>
+            <div class="card__button">
+                <div class="card__button--primary"></div>
+                <div class="card__button--secondary"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- trường hợp 2 -->
+    <div class="container">
+        <div class="card-list">
+            <!-- card item 1 -->
+            <div class="card-item">
+                <div class="card-item__image"></div>
+                <div class="card-item__title"></div>
+                <div class="card-item__desc"></div>
+                <div class="card-item__button">
+
+                    <div class="card-item__button--primary"></div>
+                    <div class="card-item__button--secondary"></div>
+                </div>
+            </div>
+            <!-- card item 2 -->
+            <!-- card item 3 -->
+            <!-- ... -->
+        </div>
+    </div>
+
+    <!-- Lưu ý -->
+    <!-- BEM không có mục đích phản ánh cấu trúc lồng nhau của các block, các element-->
+    <!-- Đặt tên class đúng -->
+    <div class="block">
+        <div class="block__elem1">
+            <div class="block__elem2">
+                <div class="block__elem3"></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Đặt tên class chưa đúng -->
+    <div class="block">
+        <div class="block__elem1">
+            <div class="block__elem1__elem2">
+                <div class="block__elem1__elem2__elem3"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

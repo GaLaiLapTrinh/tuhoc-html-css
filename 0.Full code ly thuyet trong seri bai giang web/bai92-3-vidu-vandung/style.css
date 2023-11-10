@@ -1,0 +1,51 @@
+/* beauty CSS */
+.box1 {
+  background: yellow;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.box2 {
+  background: rgb(79, 79, 23);
+  grid-column-start: 3;
+  grid-column-end: 6;
+}
+
+.box3 {
+  background: rgb(48, 89, 143);
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.box4 {
+  background: rgb(26, 108, 196);
+}
+
+.box5 {
+  background: rgb(167, 111, 23);
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.box6 {
+  background: rgb(30, 45, 105);
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.container {
+  background: #ccc;
+  display: inline-grid;
+  gap: 15px;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(3, 100px);
+}

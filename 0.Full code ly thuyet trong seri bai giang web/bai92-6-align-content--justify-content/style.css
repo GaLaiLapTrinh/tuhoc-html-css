@@ -1,0 +1,48 @@
+/* code beauty  */
+.box1,
+.box4,
+.box5 {
+  background: aqua;
+}
+
+.box2,
+.box3 {
+  background: blue;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  background: yellow;
+  height: 100vh;
+  grid-template-columns: 100px 200px 50px;
+  grid-template-rows: 50px 100px 200px;
+  /* align-items: stretch;
+  align-items: center;
+  align-items: start;
+  align-items: end; */
+  /* 
+  justify-items: stretch;
+  justify-items: center;
+  justify-items: left;
+  justify-items: right; */
+/* 
+  align-content: start;
+  align-content: end;
+  align-content: space-around;
+  align-content: space-between;
+  align-content: space-evenly; */
+
+  justify-content: start;
+  justify-content: end;
+  justify-content: center;
+  justify-content: space-evenly;
+  justify-content: space-between;
+  justify-content: space-around;
+
+}

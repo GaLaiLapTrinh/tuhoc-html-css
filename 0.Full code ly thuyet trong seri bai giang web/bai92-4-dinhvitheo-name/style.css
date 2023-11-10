@@ -1,0 +1,42 @@
+/* code beauty  */
+.box1,
+.box4,
+.box5 {
+  background: aqua;
+}
+
+.box2,
+.box3 {
+  background: blue;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  gap: 5px 10px;
+  grid-template-areas:
+    "header header header"
+    "menu content sidebar"
+    "menu footer footer";
+}
+
+.box1 {
+  grid-area: header;
+}
+.box2 {
+  grid-area: menu;
+}
+.box3 {
+  grid-area: content;
+}
+.box4 {
+  grid-area: sidebar;
+}
+.box5 {
+  grid-area: footer;
+}

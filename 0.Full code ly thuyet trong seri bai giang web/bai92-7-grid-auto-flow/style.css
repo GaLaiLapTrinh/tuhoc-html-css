@@ -1,0 +1,21 @@
+/* css beauty */
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
+}
+
+.container {
+  display: grid;
+  gap: 2px;
+  /* mặc định hướng các item là row */
+  /* grid-auto-flow: row; */
+  /* số cột mặc định là 1 nên cần chỉ định số cột */
+  /* grid-template-columns: repeat(5, 100px); */
+
+  /* chuyen huong sang column */
+  grid-auto-flow: column;
+  /* chi dinh so hang */
+  grid-template-rows: repeat(3, 50px);
+}
