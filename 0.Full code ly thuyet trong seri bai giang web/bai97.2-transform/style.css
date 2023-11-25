@@ -1,0 +1,54 @@
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+  background: red;
+  color: #fff;
+  font-size: 3rem;
+  /*1.  Rotate (Xoay):*/
+  /* transform: rotate(45deg); */
+  /* Có thể gõ tắt */
+  /* rotate: 45deg; */
+
+  /* 2. Scale */
+  /* nhập 2 đối số */
+  /* transform: scale(1.5, 0.5); */
+  /* nhập 1 đối số */
+  /* transform: scale(1.5); */
+  /* Có thể gõ tắt */
+  /* scale: 1.5; */
+
+  /* 3.skew */
+  /* nghiêng cạnh trái, phải
+  ( theo chiều X) */
+  /* transform: skewX(20deg); */
+  /* hoặc */
+  /* transform: skew(20deg); */
+  /* nghiêng cạnh trên, dưới
+  theo chiều Y */
+  /* transform: skewY(20deg); */
+  /* nghiêng cả X, Y 
+  skew(X, Y) 
+  */
+  /* transform: skew(20deg, 10deg); */
+
+  /* 4.translate  */
+  /* Dịch theo X cách 1*/
+  /* transform: translate(50px); */
+  /* Dịch theo X cách 2*/
+  /* transform: translateX(50px); */
+  /* Dịch theo X cách 3 */
+  /* translate: 50px; */
+
+  /* Dịch theo Y */
+  /* transform: translateY(50px); */
+
+  /* Dịch cả X, Y */
+  /* transform: translate(50px, 30px); */
+  /* Cách 2 */
+  /* translate: 50px 30px; */
+
+  /* 5. kết hợp nhiều thuốc tính */
+  /* vừa phóng to, vừa xoay */
+  transform: scale(2) rotate(25deg);
+}

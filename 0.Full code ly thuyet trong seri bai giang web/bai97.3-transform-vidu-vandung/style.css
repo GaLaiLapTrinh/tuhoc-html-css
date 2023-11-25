@@ -1,0 +1,33 @@
+body {
+  background: #000;
+}
+
+.header {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 50px;
+  position: relative;
+}
+
+.header__heading {
+  color: #000;
+}
+
+.header::before {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #011cff;
+  background: linear-gradient(7deg, #011cff 0%, #00fefe 80%);
+  background: -webkit-linear-gradient(7deg, #011cff 0%, #00fefe 80%);
+  background: -moz-linear-gradient(7deg, #011cff 0%, #00fefe 80%);
+  z-index: -1;
+  rotate: 5deg;
+  padding: 200px;
+  transform: translate(-5%, -30%);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+Bài tập: Thay đổi màu nền cho từng thiết bị
+[yellow] Thiết bị di động: 319px — 480px
+[chocolate] iPads và máy tính bảng: 481px — 1200px
+[green] Laptop: 1201px — 1600px
+[purple] Máy tính để bàn: 1601px trở lên
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Tuhoc.CC bài tập vận dụng Media Queries</title>
+  <style>
+    body {
+      background: cyan;
+
+      @media (min-width: 319px) and (max-width: 480px) {
+        background: yellow;
+      }
+
+      @media (min-width: 481px) and (max-width: 1200px) {
+        background: chocolate;
+      }
+
+      @media (min-width: 1201px) and (max-width: 1600px) {
+        background: green;
+      }
+
+      @media (min-width: 1601px) {
+        background: purple;
+      }
+    }
+  </style>
+</head>
+
+<body>
+</body>
+
+</html>

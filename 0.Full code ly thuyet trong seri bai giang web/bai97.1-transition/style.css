@@ -1,0 +1,26 @@
+.btn {
+  width: 200px;
+  height: 40px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  /* transition: 1s; */
+  /* transition-duration: 1s;
+  transition-property: background-color, color;
+  transition-delay: 3s;
+  transition-timing-function: ease-in; */
+  /* transition shorthand  */
+  /* transition: 1s; */
+  /* transition-duration trước transition-delay */
+  /* transition: 1s 3s ease-in all; */
+  /* transition: color 1s 3s ease-in, background-color 1s 3s ease-in; */
+  transition: 2s linear;
+}
+
+.btn:hover {
+  color: yellow;
+  background-color: red;
+  /* display: none; */
+  opacity: 0;
+}

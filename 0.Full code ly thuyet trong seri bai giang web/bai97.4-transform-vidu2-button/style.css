@@ -1,0 +1,98 @@
+button {
+  display: flex;
+  margin: 30px;
+  outline: none;
+  border: none;
+}
+
+.btn {
+  padding: 20px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 99px;
+  color: #fff;
+  background: #bd45bd;
+  transition: all 0.5s linear;
+}
+
+/* 1. thay đổi vị trí */
+.btn-1:hover {
+  /* transform: translate(0, -15px); */
+  translate: 0 -15px;
+}
+
+/* 2. Chuyển màu background */
+.btn-2:hover {
+  background: orange;
+}
+
+/* 3. Chuyển màu nền từ trái qua phải */
+.btn-3 {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn__span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background: orangered;
+  transition: width 0.5s linear;
+}
+
+.btn-3:hover::after {
+  width: 100%;
+}
+
+/* 4. Chuyển màu từ trái qua phải và chạy tiếp */
+.btn-4 {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-4::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  right: 0;
+  bottom: 0;
+  width: 0;
+  background: orangered;
+  transition: width 0.5s linear;
+}
+
+.btn-4:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+/* 5. Chuyển màu từ trên xuống dưới --> chạy tiếp  */
+.btn-5 {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-5::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background: orangered;
+  transition: height 0.5s linear;
+}
+
+.btn-5:hover::after {
+  top: 0;
+  height: 100%;
+}

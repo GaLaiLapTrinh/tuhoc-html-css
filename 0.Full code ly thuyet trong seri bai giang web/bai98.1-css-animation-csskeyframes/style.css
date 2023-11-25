@@ -1,0 +1,80 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  color: yellow;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: spin_element 3s linear 1s infinite alternate-reverse;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  /* animation-name: spin_element;
+  animation-duration: 5s;
+  animation-timing-function: linear; */
+}
+
+@keyframes spin_element {
+  from {
+    rotate: 0;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+/* box2 */
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  color: yellow;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: move 3s 2s;
+  /* animation-fill-mode: forwards; */
+  animation-fill-mode: backwards;
+  /* animation-fill-mode: both; */
+}
+
+@keyframes move {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(300px);
+  }
+}
+
+/* box 3 */
+.box3 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: yellow;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: move-box3 5s infinite;
+}
+
+@keyframes move-box3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-100px, 0);
+  }
+  50% {
+    transform: translate(-100px, -100px);
+  }
+  75% {
+    transform: translate(0, -100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

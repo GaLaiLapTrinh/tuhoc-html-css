@@ -1,0 +1,25 @@
+.blog {
+  background: cyan;
+}
+
+/* 
+1. min(<value-list>): 
+Chọn giá trị nhỏ nhất (âm nhất) từ danh sách các biểu thức được phân tách bằng dấu phẩy
+*/
+.blog {
+  width: min(800px, 100%);
+}
+
+/* 2. max(<value-list>): 
+Chọn giá trị lớn nhất (dương nhất) từ danh sách các biểu thức được phân tách bằng dấu phẩy */
+.blog {
+  width: max(800px, 100%);
+}
+
+/* 3. clamp(<min>, <ideal>, <max>): 
+Kẹp một giá trị giữa giới hạn trên và giới hạn dưới, dựa trên giá trị lý tưởng đã đặt */
+.blog {
+  /* width: clamp(300px, 100%, 1170px); */
+  /* áp dụng giới hạn font size thay đổi theo vw */
+  font-size: clamp(18px, 2vw, 24px);
+}

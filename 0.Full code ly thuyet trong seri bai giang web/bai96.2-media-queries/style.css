@@ -1,0 +1,72 @@
+.box {
+  background: cyan;
+  width: 300px;
+  height: 300px;
+}
+
+@media print {
+  .box {
+    background: red;
+  }
+}
+
+/* 1. max width: Cho phép Tối đa màn hình rộng bao nhiêu thì áp dụng */
+/* Ví dụ: Nếu màn hình <= 600px thì áp dụng CSS riêng */
+/* @media (max-width: 600px) {
+  .box {
+    width: 200px;
+    height: 200px;
+    background: cyan;
+  }
+} */
+
+/* 2. min width: Màn hình rộng tối thiểu bao nhiêu thì áp dụng */
+/* Nếu màn hình >= 1000px thì áp dụng CSS riêng */
+/* @media (min-width: 1000px) {
+  .box {
+    width: 600px;
+    height: 600px;
+    background: green;
+  }
+} */
+
+/* 3. (min-width: 600px) and (max-width: 1000px) */
+/* Nếu kích thước màn hình nằm trong khoảng 600px -> 1000px thì áp dụng */
+/* chiều rộng (tối thiểu là 600px) và (tối đa là 1000) thì áp dụng */
+/* @media (min-width: 600px) and (max-width: 1000px) {
+  .box {
+    width: 600px;
+    height: 600px;
+    background: red;
+  }
+} */
+
+/* 4. (max-width: 600px) , (min-width: 1000px)*/
+/* Nếu kích thước màn hình tối đa: 600px hoặc tối thiểu 1000px thì áp dụng */
+/* @media (max-width: 600px), (min-width: 1000px) {
+  .box {
+    width: 600px;
+    height: 600px;
+    background: red;
+  }
+} */
+
+/* 5. (max-width: 600px) and (min-width: 1000px)*/
+/* Áp dụng khi màn hình xoay ngang */
+/* @media (orientation: landscape) {
+  .box {
+    width: 600px;
+    height: 600px;
+    background: red;
+  }
+} */
+
+/* 5. bài 55.11 Vấn đề khi dùng breakpoints?  */
+/* tham khảo link boostrap
+    bootstrap breakpoints
+ */
+
+/* 5. bài 55.12 Hàm min(), max() và clamp()  */
+
+/* 55.18 Có ví dụ về responsive khá hay
+và nói qua về mobile first, desktop first  */
