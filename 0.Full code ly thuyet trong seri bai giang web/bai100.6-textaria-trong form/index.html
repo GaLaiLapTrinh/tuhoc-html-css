@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>100.6 textarea and dropdown</title>
+    <!-- homepage https://tuhoc.cc -->
+</head>
+
+<body>
+    <h2>1.text area</h2>
+    <form action="">
+        <label for="message">Message: </label>
+        <br>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Send me">
+    </form>
+
+    <h2>2.dropdown</h2>
+    <form action="">
+        <label for="color">Chọn màu: </label>
+        <br>
+        <select name="color" id="color" required>
+            <option value="">-Chọn màu-</option>
+            <option value="red">Đỏ</option>
+            <option value="green">Xanh lá cây</option>
+            <option value="blue">Xanh Dương</option>
+            <option value="yellow">Vàng</option>
+        </select>
+        <button>Xác nhận màu gửi server</button>
+    </form>
+
+    <h2>3. optgroup</h2>
+    <form action="">
+        <label for="color">Chọn màu: </label>
+        <br>
+        <select name="color" id="color" required>
+            <option value="">--Select color --</option>
+            <optgroup label="Nhom 1">
+                <option value="red">Đỏ</option>
+                <option value="green">Xanh lá cây</option>
+                <option value="blue">Xanh Dương</option>
+                <option value="yellow">Vàng</option>
+            </optgroup>
+            <optgroup label="Nhom 2">
+                <option value="red">Đỏ</option>
+                <option value="green">Xanh lá cây</option>
+                <option value="blue">Xanh Dương</option>
+                <option value="yellow">Vàng</option>
+            </optgroup>
+            <optgroup label="Nhom 3">
+                <option value="red">Đỏ</option>
+                <option value="green">Xanh lá cây</option>
+                <option value="blue">Xanh Dương</option>
+                <option value="yellow">Vàng</option>
+            </optgroup>
+        </select>
+        <button>Xác nhận màu gửi server</button>
+    </form>
+
+
+</body>
+
+</html>

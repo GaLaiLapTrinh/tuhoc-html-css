@@ -1,0 +1,29 @@
+/* khi placeholder của thẻ input đang hiển thị */
+.login-form input:placeholder-shown {
+  border-color: blue;
+  border-radius: 5px;
+  background-color: cyan;
+}
+
+/* khi placeholder không còn hiển thị */
+.login-form input:not(:placeholder-shown) {
+  background-color: yellow;
+}
+
+/* Đổi màu form khi focus vào pt con   */
+.login-form:focus-within {
+  background-color: yellow;
+}
+
+/* Đổi màu button khi focus vào pt con */
+.login-form:focus-within button {
+  background-color: red;
+}
+
+/* tab index */
+/* mặc định thì tab index sẽ xếp theo thứ tự từ trên xuống */
+
+/* Đổi màu dấu nháy */
+input {
+  caret-color: #fff;
+}

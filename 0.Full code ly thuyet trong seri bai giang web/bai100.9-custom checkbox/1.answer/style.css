@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  font-family: system-ui, sans-serif;
+}
+
+main {
+  padding: 30px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-top: 16px;
+}
+
+.form-label,
+.form-input {
+  display: block;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.form-input {
+  width: 240px;
+  height: 34px;
+  margin-top: 8px;
+  padding: 4px 8px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-group .btn {
+  margin-top: 20px;
+  padding: 10px 28px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #fff;
+  background: #f05123;
+  cursor: pointer;
+}
+
+.form-group .btn:hover {
+  opacity: 0.9;
+}
+
+/* bỏ user select khi click vào label */
+label {
+  user-select: none;
+}
+
+.checkbox-group label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.checkbox-group label::before,
+.checkbox-group label::after {
+  content: "";
+  display: inline-block;
+}
+
+.checkbox-group label::before {
+  margin-right: 10px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid red;
+  border-radius: 4px;
+}
+
+.checkbox-group [type="checkbox"]:checked ~ label::before {
+  background-color: #f05123;
+}
+
+.checkbox-group [type="checkbox"]:checked ~ label::after {
+  width: 8px;
+  height: 4px;
+  position: absolute;
+  left: 3px;
+  top: 6px;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  rotate: -45deg;
+}

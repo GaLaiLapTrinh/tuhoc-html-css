@@ -20,6 +20,7 @@ img {
 
 /* Ví dụ 2: Tạo bong bóng chat*/
 .chat {
+  max-width: 300px;
   font-size: 1.2rem;
   filter: drop-shadow(0 0 2px black);
   background: #fff;

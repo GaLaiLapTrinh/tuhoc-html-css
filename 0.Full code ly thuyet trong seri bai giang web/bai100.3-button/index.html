@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>button in form</title>
+    <!-- homepage https://tuhoc.cc -->
+</head>
+
+<body>
+    <form action="">
+
+        <label>
+            Username:
+            <input type="text" name="username" id="username">
+        </label>
+
+        <input type="submit" value="Send me">
+
+        <!-- button -->
+        <input type="button" value="Send me btn">
+
+        <!-- học thêm về thẻ button -->
+        <button><b>Gửi đi</b></button>
+        <!-- 2. thêm icon bên trong button -->
+        <br>
+        <button class="btn-icon">
+            <img src="data:image/png;base64,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"
+                alt="">
+            Submit Form
+        </button>
+
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
