@@ -1,0 +1,74 @@
+:root {
+  --light: #d8dbe0;
+  --dark: #28292c;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(30, 20, 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 200px;
+}
+
+label {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-color: var(--dark);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* tạo nền trắng  */
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+/* khi input được check thì slider đổi nền trắng */
+input:checked ~ .slider {
+  background-color: var(--light);
+}
+
+.slider::before {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  content: "";
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: var(--dark);
+
+  /* thêm box shadow để che một phần hình tròn */
+  /* dùng inset để đổ bóng từ bên trong phần tử */
+  box-shadow: inset 20px 0px 0px 0px var(--light);
+  transition: 0.3s;
+}
+
+input:checked ~ .slider::before {
+  transform: translateX(95px);
+  background-color: var(--dark);
+  box-shadow: none;
+}
+
+/* chuyển đổi màu nền */
+body:has(:checked){
+  background-color: #fff;
+}
