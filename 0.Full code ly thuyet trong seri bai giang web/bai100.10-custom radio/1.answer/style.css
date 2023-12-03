@@ -59,17 +59,18 @@ form {
 }
 
 /* custom radio */
+.gender-group label {
+  position: relative;
+}
+
 .gender-group label::before {
-  margin: 0 4px;
+  margin-right: 4px;
   content: "";
   display: inline-block;
   width: 10px;
   height: 10px;
   border: 2px solid #000;
   border-radius: 50%;
-}
-.gender-group label {
-  position: relative;
 }
 
 .gender-group label::after {
@@ -80,22 +81,14 @@ form {
   background-color: red;
   border-radius: 50%;
   position: absolute;
-  left: 7px;
   top: 6px;
+  left: 3px;
   display: none;
-}
-
-/* căn giữa  */
-.gender-group {
-  display: flex;
-  align-items: center;
 }
 
 /* kiểm tra checked và thay đổi vị trí chấm tròn */
 #male:checked + label::after,
 #female:checked + label::after,
 #other:checked + label::after {
-  display: inline-flex;
-  justify-content: center;
-  align-self: center;
+  display: inline-block;
 }
