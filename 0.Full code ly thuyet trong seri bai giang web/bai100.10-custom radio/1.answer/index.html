@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css style -->
+    <link rel="stylesheet" href="style.css">
+    <title>Custom radio</title>
+    <!-- homepage https://tuhoc.cc -->
+</head>
+
+<body>
+    <main>
+        <h1>Register</h1>
+
+        <form action="">
+            <div class="form-group">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-input" type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Gender</label>
+                <div class="gender-group">
+                    <input type="radio" name="gender" id="male" value="male" hidden />
+                    <label for="male">Male</label>
+
+                    <input type="radio" name="gender" id="female" value="female" hidden />
+                    <label for="female">Female</label>
+
+                    <input type="radio" name="gender" id="other" value="other" checked hidden />
+                    <label for="other">Other</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-input" type="password" id="password" name="password" required />
+            </div>
+
+            <div class="form-group">
+                <button class="btn" type="submit">Register</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
