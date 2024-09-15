@@ -1,0 +1,9 @@
+/* :root {
+  --bs-primary-rgb: 13, 110, 253;
+}
+
+.text-primary {
+  --bs-text-opacity: 0.1;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(13, 110, 253, 1);
+} */

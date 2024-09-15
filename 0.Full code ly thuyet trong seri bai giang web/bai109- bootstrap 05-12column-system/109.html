@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập Layout Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+        body {
+            margin-top: 50px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .flex-container {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            margin-top: 50px;
+            border-bottom: 50px solid transparent;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 150px;
+            resize: vertical;
+            font-family: monospace;
+            background-color: #ddd;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #4285f4;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .parent {
+            width: 80%;
+            background-color: #ddd;
+            padding: 20px;
+            margin: 2rem;
+        }
+
+        .child {
+            background-color: lightcoral;
+            color: white;
+            font-size: 18px;
+            padding: 20px;
+            border: 2px solid white;
+        }
+
+        .test-parent {
+            width: 80%;
+            background-color: #ddd;
+            padding: 20px;
+            margin: 2rem;
+        }
+
+        .test-parent>*>* {
+            background-color: darkorange;
+            color: white;
+            font-size: 18px;
+            padding: 20px;
+            border: 2px solid darkred;
+        }
+
+        .test2 {
+            background-color: lightblue;
+            color: white;
+            font-size: 18px;
+            padding: 20px;
+            border: 2px solid white;
+        }
+
+        .solution2>*>* {
+            background-color: mediumseagreen;
+            color: white;
+            font-size: 18px;
+            padding: 20px;
+            border: 2px solid white;
+        }
+
+        .test3 {
+            background-color: darkkhaki;
+            color: white;
+            font-size: 18px;
+            padding: 20px;
+            border: 2px solid white;
+        }
+
+        .solution3>*>* {
+            background-color: darkcyan;
+            color: white;
+            font-size: 18px;
+            padding: 20px;
+            border: 2px solid white;
+        }
+
+        .table-responsive {
+            margin: 20px auto;
+            width: 90%;
+        }
+
+        .table {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .table th,
+        .table td {
+            text-align: center;
+            padding: 12px;
+        }
+
+        .table th {
+            background-color: #4285f4;
+            color: white;
+        }
+
+        .table td {
+            background-color: #f7f7f7;
+        }
+
+        .table td:nth-child(even) {
+            background-color: #e9e9e9;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bài Tập Layout Bootstrap</h1>
+
+    <!-- Bảng Quy Định Breakpoint -->
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Breakpoint</th>
+                    <th>Class infix</th>
+                    <th>Dimensions</th>
+                    <th>Quy định</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Extra small</td>
+                    <td>None</td>
+                    <td>&lt;576px</td>
+                    <td>Di động</td>
+                </tr>
+                <tr>
+                    <td>Small</td>
+                    <td>sm</td>
+                    <td>&ge;576px</td>
+                    <td>Di động</td>
+                </tr>
+                <tr>
+                    <td>Medium</td>
+                    <td>md</td>
+                    <td>&ge;768px</td>
+                    <td>Tablet</td>
+                </tr>
+                <tr>
+                    <td>Large</td>
+                    <td>lg</td>
+                    <td>&ge;992px</td>
+                    <td>Laptop</td>
+                </tr>
+                <tr>
+                    <td>Extra large</td>
+                    <td>xl</td>
+                    <td>&ge;1200px</td>
+                    <td>Desktop</td>
+                </tr>
+                <tr>
+                    <td>Extra extra large</td>
+                    <td>xxl</td>
+                    <td>&ge;1400px</td>
+                    <td>Tivi</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="flex-container">
+        <h2>Bài Tập 1</h2>
+        <div class="container parent">
+            <div class="row">
+                <div class="col-md-4 child">33% Tablet, 100% di động</div>
+                <div class="col-md-4 child">33% Tablet, 100% di động</div>
+                <div class="col-md-4 child">33% Tablet, 100% di động</div>
+            </div>
+        </div>
+        <div class="container test-parent" id="test1">
+            <div class="row">
+                <div class="">33% Tablet, 100% di động</div>
+                <div class="">33% Tablet, 100% di động</div>
+                <div class="">33% Tablet, 100% di động</div>
+            </div>
+        </div>
+        <div class="container">
+            <textarea id="test-1-code" placeholder="Viết mã CSS của bạn vào đây..." rows="5">
+<!-- Hãy chỉnh sửa mã HTML của các khối màu cam dưới đây để chúng hoạt động giống như khối màu đỏ nhạt. -->
+  <div class="row">
+    <div class="">33% Tablet, 100% di động</div>
+    <div class="">33% Tablet, 100% di động</div>
+    <div class="">33% Tablet, 100% di động</div>
+  </div>
+  
+    </textarea>
+        </div>
+
+        <button onclick="applyTest1()">Áp dụng thay đổi</button>
+
+        <script>
+            function applyTest1() {
+                const userCss = document.getElementById('test-1-code').value;
+                const test1 = document.getElementById('test1');
+                test1.innerHTML = userCss;
+            }
+        </script>
+    </div>
+
+    <div class="flex-container">
+        <h2>Bài Tập 2</h2>
+        <div class="container parent">
+            <div class="row">
+                <div class="col-lg-8 col-sm-12 col-10 child test2">Cột 1</div>
+                <div class="col-lg-2 col-sm-6 col-10 child test2">Cột 2</div>
+                <div class="col-lg-2 col-sm-6 col-10 child test2">Cột 3</div>
+            </div>
+        </div>
+        <div class="container test-parent  solution2" id="test2">
+            <div class="row">
+                <div class="">Cột 1</div>
+                <div class="">Cột 2</div>
+                <div class="">Cột 3</div>
+            </div>
+        </div>
+        <div class="container">
+            <textarea id="test-2-code" rows="5">
+  <!-- Hãy chỉnh sửa mã HTML dưới đây để các khối màu xanh lục nhạt hoạt động giống như khối màu xanh nhạt. -->
+  <div class="row">
+    <div class="">Cột 1</div>
+    <div class="">Cột 2</div>
+    <div class="">Cột 3</div>
+  </div>
+      
+        </textarea>
+        </div>
+
+        <button onclick="applyTest2()">Áp dụng thay đổi</button>
+
+        <script>
+            function applyTest2() {
+                const userCss = document.getElementById('test-2-code').value;
+                const test1 = document.getElementById('test2');
+                test1.innerHTML = userCss;
+            }
+        </script>
+    </div>
+    <div class="flex-container">
+        <h2>Bài Tập 3</h2>
+        <div class="container parent">
+            <div class="row">
+                <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-sm-12 child test3">Cột 1</div>
+                <div class="col-xxl-10 col-xl-9 col-lg-8 col-md-6 col-sm-12 child test3">Cột 2</div>
+            </div>
+        </div>
+        <div class="container test-parent  solution3" id="test3">
+            <div class="row">
+                <div class="">Cột 1</div>
+                <div class="">Cột 2</div>
+            </div>
+        </div>
+        <div class="container">
+            <textarea id="test-3-code" rows="5">
+      <!-- Hãy chỉnh sửa mã HTML dưới đây để các khối màu lục sẫm hoạt động giống như khối màu vàng nhạt. -->
+      <div class="row">
+        <div class="">Cột 1</div>
+        <div class="">Cột 2</div>
+      </div>
+          
+            </textarea>
+        </div>
+
+        <button onclick="applyTest3()">Áp dụng thay đổi</button>
+
+        <script>
+            function applyTest3() {
+                const userCss = document.getElementById('test-3-code').value;
+                const test1 = document.getElementById('test3');
+                test1.innerHTML = userCss;
+            }
+        </script>
+    </div>
+</body>
+
+</html>
