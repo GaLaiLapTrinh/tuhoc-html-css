@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự án 5 boostrap tuhoc.cc</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- my style -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-light">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-light border-bottom small">
+        <div class="container">
+            <!-- navbar rand -->
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo-tuhoc-light.png" alt="logo tuhoc.cc">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- menu item -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+                <!-- btn dùng thẻ a để đăng ký và đăng nhập -->
+                <div class="me-1 mb-2 mb-lg-0 d-flex flex-column gap-1 flex-md-row">
+                    <a href="#!" class="btn btn-danger btn-sm d-inline-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="me-2"
+                            viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path fill="#ffffff"
+                                d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM504 312l0-64-64 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l64 0 0-64c0-13.3 10.7-24 24-24s24 10.7 24 24l0 64 64 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-64 0 0 64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+                        </svg>
+                        Sign-up for free
+                    </a>
+
+
+                    <a href="#!" class="btn btn-warning btn-sm d-inline-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="me-2"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M352 96l64 0c17.7 0 32 14.3 32 32l0 256c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0c53 0 96-43 96-96l0-256c0-53-43-96-96-96l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32zm-9.4 182.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L242.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                        </svg>
+                        Login
+                    </a>
+                </div>
+                <!-- form search -->
+                <form class="d-flex" role="search">
+                    <input class="form-control form-control-sm me-0" type="search" placeholder="Search for.."
+                        aria-label="Search">
+                    <button class="btn btn-success btn-sm" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path fill="#ffffff"
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- header  -->
+    <header class="main-header py-5 border-bottom">
+        <div class="container">
+            <div class="row align-items-center gx-md-5">
+                <!-- khối bên trái -->
+                <div class="col-md-6">
+                    <h1 class="fs-3 fw-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime alias
+                        nulla minus sunt similique
+                    </h1>
+                    <p class="fs-5 fw-light text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Consectetur, debitis mollitia
+                        laudantium tenetur, tempora obcaecati provident voluptatum</p>
+
+                    <a href="#!" class="btn btn-success btn-sm d-inline-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" class="me-2"
+                            viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path fill="#ffffff"
+                                d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM504 312l0-64-64 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l64 0 0-64c0-13.3 10.7-24 24-24s24 10.7 24 24l0 64 64 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-64 0 0 64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+                        </svg>
+                        Sign-up to get started
+                    </a>
+                </div>
+
+
+                <!-- khối bên phải -->
+                <div class="col-md-6 mt-2 mt-md-0">
+                    <div>
+                        <img class="rounded w-100" src="./img/main-header.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- site feature -->
+    <section class="py-4 border-bottom">
+        <div class="container">
+            <div class="row">
+                <!-- item -->
+                <div class="col-md-4">
+                    <div class="feature-item bg-white border rounded p-3 d-flex align-items-center">
+                        <div>
+                            <img src="./img/clock.png" alt="">
+                        </div>
+                        <div class="ms-2">
+                            <h3 class="fs-5">Lorem ipsum dolor sit amet</h3>
+                            <p class="small text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facere officiis modi similique
+                                nihil</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-md-4">
+                    <div class="feature-item bg-white border rounded p-3 d-flex align-items-center mt-2 mt-md-0">
+                        <div>
+                            <img src="./img/responsive.png" alt="">
+                        </div>
+                        <div class="ms-2">
+                            <h3 class="fs-5">Lorem ipsum dolor sit amet</h3>
+                            <p class="small text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facere officiis modi similique
+                                nihil</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-md-4">
+                    <div class="feature-item bg-white border rounded p-3 d-flex align-items-center mt-2 mt-md-0">
+                        <div>
+                            <img src="./img/tick.png" alt="">
+                        </div>
+                        <div class="ms-2">
+                            <h3 class="fs-5">Lorem ipsum dolor sit amet</h3>
+                            <p class="small text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Facere officiis modi similique
+                                nihil</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- course -->
+    <section class="py-4 border-bottom">
+        <div class="container">
+            <!-- row top -->
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <div class="text-md-center">
+                        <h4 class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, dolorem
+                            voluptatum.
+                            Temporibus amet mollitia</h4>
+                        <p class="small text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Provident commodi quas adipisci
+                            quod? Similique, eligendi illum? Eum modi rem dolorem minus nisi dolore ullam!</p>
+                        <a href="#!"
+                            class="btn btn-success btn-sm d-inline-flex justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-mortarboard-fill me-2" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z">
+                                </path>
+                                <path
+                                    d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z">
+                                </path>
+                            </svg>
+                            View all course
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- row course -->
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <div class="list-group small mb-3">
+                        <div class="list-group-item text-bg-light fw-bold">Course Categories</div>
+                        <a class="align-items-center list-group-item d-flex justify-content-between" href="#!">
+                            Premium Courses
+                            <span class="badge rounded-pill text-bg-warning">14</span>
+                        </a>
+                        <a class="align-items-center list-group-item d-flex justify-content-between" href="#!">
+                            Free Courses
+                            <span class="badge rounded-pill text-bg-warning">1</span>
+                        </a>
+                    </div>
+                    <div class="list-group small mb-3 mb-md-0">
+                        <div class="list-group-item text-bg-light fw-bold">Course by Topics</div>
+                        <a class="align-items-center list-group-item d-flex justify-content-between" href="#!">
+                            Coding
+                            <span class="badge rounded-pill text-bg-warning">14</span>
+                        </a>
+                        <a class="align-items-center list-group-item d-flex justify-content-between" href="#!">
+                            Programming
+                            <span class="badge rounded-pill text-bg-warning">1</span>
+                        </a>
+                        <a class="align-items-center list-group-item d-flex justify-content-between" href="#!">
+                            Design
+                            <span class="badge rounded-pill text-bg-warning">1</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="list-group small">
+                        <div
+                            class="align-items-center list-group-item d-flex justify-content-between text-bg-light fw-bold">
+                            List of all course
+                            <span class="badge rounded-pill text-bg-warning">24 Courses Available</span>
+                        </div>
+                        <!-- item 1 -->
+                        <a href="./single-course.html" class="list-group-item list-group-item-action">
+                            <div class="row align-items-center">
+                                <div class="col-md-4">
+                                    <div>
+                                        <img src="./img/main-header.jpg" alt="" class="rounded img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
+                                    <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Consequuntur esse
+                                        aperiam iusto ut voluptatem fuga, voluptates distinctio laboriosam error</p>
+                                    <div class="d-inline-flex align-items-center">
+                                        <span
+                                            class="px-2 py-1 rounded-pill text-bg-warning me-2 d-inline-flex align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill me-2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                </path>
+                                            </svg>
+                                            Rating: 4.7
+                                        </span>
+                                        <span class="px-2 py-1 rounded-pill text-bg-success">
+                                            Price:Rs,499/-
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- item 2 -->
+                        <a href="./single-course.html" class="list-group-item list-group-item-action">
+                            <div class="row align-items-center">
+                                <div class="col-md-4">
+                                    <div>
+                                        <img src="./img/pic1.jpg" alt="" class="rounded img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
+                                    <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Consequuntur esse
+                                        aperiam iusto ut voluptatem fuga, voluptates distinctio laboriosam error</p>
+                                    <div class="d-inline-flex align-items-center">
+                                        <span
+                                            class="px-2 py-1 rounded-pill text-bg-warning me-2 d-inline-flex align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill me-2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                </path>
+                                            </svg>
+                                            Rating: 4.7
+                                        </span>
+                                        <span class="px-2 py-1 rounded-pill text-bg-success">
+                                            Price:Rs,499/-
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- item 3 -->
+                        <a href="./single-course.html" class="list-group-item list-group-item-action">
+                            <div class="row align-items-center">
+                                <div class="col-md-4">
+                                    <div>
+                                        <img src="./img/pic2.jpg" alt="" class="rounded img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
+                                    <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Consequuntur esse
+                                        aperiam iusto ut voluptatem fuga, voluptates distinctio laboriosam error</p>
+                                    <div class="d-inline-flex align-items-center">
+                                        <span
+                                            class="px-2 py-1 rounded-pill text-bg-warning me-2 d-inline-flex align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill me-2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                </path>
+                                            </svg>
+                                            Rating: 4.7
+                                        </span>
+                                        <span class="px-2 py-1 rounded-pill text-bg-success">
+                                            Price:Rs,499/-
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- item 4 -->
+                        <a href="./single-course.html" class="list-group-item list-group-item-action">
+                            <div class="row align-items-center">
+                                <div class="col-md-4">
+                                    <div>
+                                        <img src="./img/pic3.jpg" alt="" class="rounded img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
+                                    <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Consequuntur esse
+                                        aperiam iusto ut voluptatem fuga, voluptates distinctio laboriosam error</p>
+                                    <div class="d-inline-flex align-items-center">
+                                        <span
+                                            class="px-2 py-1 rounded-pill text-bg-warning me-2 d-inline-flex align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill me-2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                </path>
+                                            </svg>
+                                            Rating: 4.7
+                                        </span>
+                                        <span class="px-2 py-1 rounded-pill text-bg-success">
+                                            Price:Rs,499/-
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- item 5 -->
+                        <a href="./single-course.html" class="list-group-item list-group-item-action">
+                            <div class="row align-items-center">
+                                <div class="col-md-4">
+                                    <div>
+                                        <img src="./img/main-header.jpg" alt="" class="rounded img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h5>
+                                    <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Consequuntur esse
+                                        aperiam iusto ut voluptatem fuga, voluptates distinctio laboriosam error</p>
+                                    <div class="d-inline-flex align-items-center">
+                                        <span
+                                            class="px-2 py-1 rounded-pill text-bg-warning me-2 d-inline-flex align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-star-fill me-2" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z">
+                                                </path>
+                                            </svg>
+                                            Rating: 4.7
+                                        </span>
+                                        <span class="px-2 py-1 rounded-pill text-bg-success">
+                                            Price:Rs,499/-
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- nhúng js bt -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+Từ clip này, mình sẽ tạo repo trên github để quản lý code của bài thực hành dự án 4 
+các bạn truy cập vào https://tuhoc.cc/duan để lấy code dự án nhé
+Vì thư mục img nếu up đi up lại nhiều lần khá lãng phí tài nguyên
+Cảm ơn các bạn, yêu các bạn nhiều
+Chúc các bạn thành công :) 
