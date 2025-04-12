@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body>
+
+    <!-- 
+    1. Width theo kích thước cố định 
+    1.1. w-<number>
+    Mỗi số ứng với đơn vị 0.25rem = 4px  
+    1rem = 16px 
+    → w-4 = 1rem, w-16 = 4rem
+    -->
+    <div class="w-15 bg-red-500 mb-3">1.w-16</div>
+
+    <!-- 
+    1.2. w-3xs → w-7xl (tham khảo thêm tài liệu)
+    -->
+    <div class="w-3xs bg-red-500 mb-3">1.2 w-3xs</div>
+
+    <!-- 
+    1.3 Width theo phần trăm (chiếm bao nhiêu % so với thẻ cha nó)
+    2.1. w-1/2, w-1/3, w-2/3, ...
+    -->
+    <div class="w-1/2 bg-blue-500">50%</div>
+    <div class="w-1/3 bg-blue-500">33%</div>
+
+    <div class="bg-red-500 w-[500px] mb-3">
+        <div class="w-1/2 bg-blue-500">50%</div>
+    </div>
+
+    <!-- 
+    2.2. w-full – Chiếm 100% chiều rộng thẻ cha
+    -->
+
+    <div class="bg-red-500 w-[500px] mb-3">
+        <div class="w-full bg-blue-500">50%</div>
+    </div>
+
+    <!-- 
+    2.3. w-[40%] – Giá trị phần trăm tùy chỉnh
+    -->
+    <div class="bg-red-500 w-[500px] mb-3">
+        <div class="w-[27%] bg-blue-500">27%</div>
+    </div>
+    <!-- 
+    3. Width theo viewport 
+    3.1. w-screen – 100% chiều rộng viewport (100vw)
+    -->
+
+    <span class="bg-purple-500 w-screen inline-block mb-3">Chiếm 100% chiều rộng viewport</span>
+
+    <!-- 
+    3.2. 
+    Đơn vị	Ý nghĩa	Ứng dụng
+    w-lvw	Large Kích thước lớn nhất có thể	Layout toàn màn hình, không co dù có thanh công cụ
+    w-svw	Small Kích thước nhỏ nhất có thể	Layout co lại để tránh bị che khi hiện bàn phím/thanh địa chỉ
+    w-dvw	Dynamic Tự động giữa lvw và svw	Khuyên dùng nhất cho mobile
+    Chủ yếu dùng khi tối ưu giao diện trên mobile, Dùng khi chiều rộng màn hình thay đổi do thanh cuộn, bàn phím ảo...
+    -->
+
+    <!-- 
+    4. Width theo nội dung hoặc tự động
+    
+    Class	    Ý nghĩa
+    w-auto	    Tự động, không bị set cứng width
+    w-min	    Co nhỏ nhất có thể mà không vỡ nội dung
+    w-max	    Mở rộng tối đa theo nội dung
+    w-fit	    tự điều chỉnh phù hợp với nội dung
+    w-[300px]	Tùy chỉnh pixel
+    -->
+    <div class="flex gap-4 bg-gray-200">
+        <div class="w-auto bg-blue-500 text-white">w-auto</div>
+        <div class="w-1/2 bg-green-500 text-white">w-1/2</div>
+    </div>
+
+    <div class="w-64 bg-red-300">Rộng 16rem</div>
+    <div class="w-auto bg-green-400">Trở lại auto</div>
+
+    <div class="w-fit bg-cyan-400 px-2">w-fit (text khít)</div>
+    <div class="w-min bg-cyan-500 px-1">w-min</div>
+    <div class="w-max bg-cyan-600 text-white">w-max ffsdfsdfsdfsdf</div>
+    <div class="w-[300px] bg-cyan-700 text-white">300px custom</div>
+
+    <!-- 
+    5. Dùng size-* (width + height gộp)
+    5.1. size-<number>
+    -->
+    <div class="size-32 bg-red-400">= 8rem x 8rem</div>
+
+    <!-- 
+    5.2. size-full, size-auto, size-px
+    -->
+    <div class="size-50 bg-red-400">
+        <div class="size-full bg-yellow-500">Chiếm toàn bộ width + height</div>
+    </div>
+
+    <div class="size-px bg-red-500 mb-3">1px x 1px</div>
+    <div class="size-[150px] bg-yellow-700 text-white">150px x 150px</div>
+    <div class="size-50 bg-red-400 mb-3">
+        <div class="size-auto inline-block bg-yellow-400">Auto cả 2 chiều</div>
+    </div>
+
+    <!-- min-width: set kích thước tối thiểu cho phần tử, 
+     kể cả trình duyệt có co lại thì phần tử vẫn luôn ở kích thước min, không co lại thêm 
+    -->
+
+    <div class="bg-red-500 max-w-50">min width</div>
+
+
+    <!-- min height -->
+    <div class="h-20 bg-blue-500">
+        <div class="min-h-80 bg-red-500 opacity-90">min-h-80</div>
+    </div>
+
+    <!-- max-height -->
+    <div class="h-96 bg-red-500">
+        <div class="h-full max-h-80 bg-blue-500">max-h-80</div>
+
+    </div>
+
+</body>
+
+</html>
