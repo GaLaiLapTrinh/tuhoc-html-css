@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="p-4">
+    <!-- 1. bg-clip-border (Mặc định) : ảnh nền sẽ hiển thị đầy đủ, 
+     kéo dài đến cả phần viền (border). -->
+    <div class="bg-blue-500 border-4 border-dotted p-4 mb-4 bg-clip-border">
+        Nền kéo dài đến phần viền
+    </div>
+
+    <!-- 2. bg-clip-padding : ảnh nền chỉ hiển thị từ vùng padding trở vào,
+      không phủ viền. -->
+    <div class="bg-blue-500 border-4 border-dotted p-4 mb-4 bg-clip-padding">
+        Nền kéo dài đến phần padding
+    </div>
+
+    <!-- 3. bg-clip-content : ảnh nền chỉ hiển thị trong phần nội dung, 
+     bỏ qua cả viền và padding. -->
+    <div class="bg-blue-500 border-4 border-dotted p-4 mb-4 bg-clip-content">
+        Nền kéo dài đến phần content
+    </div>
+
+
+    <!-- 3. bg-clip-text : ảnh nền chỉ hiển thị bên trong chữ (text), 
+     còn phần ngoài chữ thì trong suốt.
+    ⚠️ Cần thêm text-transparent để hiệu ứng hoạt động. -->
+    <h2 class="
+    text-2xl font-bold bg-gradient-to-r
+    from-purple-500 to-pink-500 bg-clip-text text-transparent">Chữ có nền gradient</h2>
+
+
+</body>
+
+</html>

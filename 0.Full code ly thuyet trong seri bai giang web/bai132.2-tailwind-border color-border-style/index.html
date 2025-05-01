@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="p-2">
+    <!-- 1. border-inherit: kế thừa màu viền (border-color) từ phần tử cha -->
+    <div class="border border-blue-500">Cha
+        <div class="border border-inherit">Con kế thừa màu viền từ cha</div>
+    </div>
+
+    <!-- 2. border-current: lấy đúng màu chữ (color)
+      hiện tại chính phần tử đó để làm màu viền. -->
+    <p class="border border-current text-blue-500 mt-4">Lorem ipsum dolor sit.</p>
+
+    <!--
+    3. border-transparent:  vẫn chiếm chỗ (vẫn có độ dày) 
+    nhưng không thấy được bằng mắt
+    -->
+    <p class="border border-transparent text-blue-500 mt-4">
+        Viền trong suốt nhưng vẫn tồn tại</p>
+
+    <!-- 4.border style -->
+    <div class="border-2 border-double border-blue-500">Border</div>
+</body>
+
+</html>

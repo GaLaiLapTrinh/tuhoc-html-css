@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="p-4">
+    <button class="cursor-pointer border border-blue-500 bg-violet-500 p-2 rounded-xl text-white">Submit</button>
+    <button class="cursor-progress border border-blue-500 bg-violet-500 p-2 rounded-xl text-white">Saving</button>
+    <button class="cursor-not-allowed border border-blue-500 bg-violet-500 p-2 rounded-xl text-white"
+        disabled>Confirm</button>
+
+    <!-- 3. Select Classes: Quản lý hành vi khi người dùng cố chọn văn bản:
+     https://tailwindcss.com/docs/user-select 
+    | Class | Tác dụng | CSS tương đương |
+    |:------|:---------|:----------------|
+    | `select-none` | Không cho người dùng bôi đen chọn | `user-select: none` |
+    | `select-text` | Cho phép chọn (bôi đen) từng phần văn bản | `user-select: text` |
+    | `select-all` | Khi click vào, tự động chọn toàn bộ nội dung | `user-select: all` |
+    | `select-auto` | Theo mặc định trình duyệt quyết định | `user-select: auto` |
+    -->
+
+    <button class="select-none cursor-pointer border border-blue-500 bg-violet-500 p-2 rounded-xl text-white">
+        Submit</button>
+
+</body>
+
+</html>

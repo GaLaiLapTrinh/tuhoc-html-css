@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="p-4">
+    <!-- 1. bg-origin-padding (Mặc định) : 
+    Gốc 0,0 của Hình nền sẽ bắt đầu từ padding 
+    -->
+    <div class="bg-[url(/image.png)] bg-origin-padding w-64 h-32 border-8 border-dotted bg-no-repeat p-4 mb-4"></div>
+
+    <!-- 2. bg-origin-border : 
+    Gốc 0,0 của Hình nền sẽ bắt đầu từ border 
+    -->
+    <div class="bg-[url(/image.png)] bg-origin-border w-64 h-32 border-8 border-dotted bg-no-repeat p-4 mb-4"></div>
+
+    <!-- 3. bg-origin-content : 
+    Gốc 0,0 của Hình nền sẽ bắt đầu từ content 
+    -->
+    <div class="bg-[url(/image.png)] bg-clip-content bg-origin-content w-64 h-32 border-8 border-dotted bg-no-repeat p-4 mb-4"></div>
+
+
+</body>
+
+</html>

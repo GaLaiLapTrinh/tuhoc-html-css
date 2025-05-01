@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="p-4">
+
+    <p>1. bg-auto - mặc định: giữ nguyên kích thước gốc ban đầu</p>
+    <div class="bg-[url(/image.png)] bg-auto h-screen bg-no-repeat"></div>
+    <p>2. bg-cover : Giữ nguyên tỷ lệ ảnh gốc (không bóp méo),
+        có thể bị crop nếu tỉ lệ khác nhau.</p>
+    <div class="bg-[url(/image.png)] bg-cover size-50 bg-no-repeat bg-amber-100"></div>
+    <p>3. bg-contain : Ảnh nền sẽ được điều chỉnh kích thước để
+        toàn bộ ảnh nằm gọn trong phần tử, nhưng có thể để lại
+        khoảng trống nếu tỉ lệ không khớp.</p>
+    <div class="bg-[url(/image.png)] bg-contain size-50 bg-no-repeat bg-amber-100"></div>
+
+    <p>4. bg-size-(<custom-property>) : Sử dụng biến css.</p>
+    <div class="bg-[url(/image.png)] bg-size-(--my-image-size) size-50 bg-no-repeat bg-amber-100"></div>
+
+    <p>5. bg-size-[<value>] :
+            Ứng dụng: Khi bạn muốn đặt một giá trị cụ thể
+            như 30px 20px, 75%, 10rem, v.v.</p>
+    <div class="bg-[url(/image.png)] bg-size-[360px_200px] h-screen bg-no-repeat bg-amber-100"></div>
+</body>
+
+
+</html>
