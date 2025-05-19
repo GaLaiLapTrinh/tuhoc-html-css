@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/output.css">
+  <!-- Khói học tailwind css tại tuhoc.cc -->
+</head>
+
+<body class="">
+  <!-- kiến thức liên quan flexbox từ 89.1 đến 89.10  -->
+  <p class="text-xl font-bold">1. Tìm hiểu flex, nhắc lại kiến thức bài 89.1</p>
+  <div class="flex bg-cyan-400">
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 1</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 2</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 3</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 4</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+  </div>
+
+  <p class="text-xl font-bold mt-7">2.justify-content tương ứng bài 89.2
+    <span class="italic text-red-500">&lt;justify-&gt;</span>
+  <p class="font-bold text-blue-500">Thuộc tính thuộc nhóm Container, căn theo main axis</p>
+
+  <p>1. justify-start : Mặc định, dồn về hướng start của trục main</p>
+  <div class="flex justify-start bg-cyan-400">
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 1</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 2</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 3</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 4</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+  </div>
+
+  <p>2. justify-end : dồn về hướng end của trục main</p>
+  <div class="flex justify-end bg-cyan-400">
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 1</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 2</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 3</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 4</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+  </div>
+
+  <p>3. justify-end-safe : dồn về hướng end của trục main</p>
+  <div class="flex justify-end-safe bg-cyan-400">
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 1</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 2</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 3</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 4</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+  </div>
+
+  <!-- So sánh  -->
+  <div class="w-[300px] justify-end flex bg-cyan-400  p-4 m-5">
+    <div class="bg-blue-500 text-white border px-10 py-2">Block 1</div>
+    <div class="bg-blue-500 text-white border px-10 py-2">Block 2</div>
+    <div class="bg-blue-500 text-white border px-10 py-2">Block 3</div>
+    <div class="bg-blue-500 text-white border px-10 py-2">Block 4</div>
+    <div class="bg-blue-500 text-white border px-10 py-2">Block 5</div>
+  </div>
+  <!-- safe là một từ khoá trong CSS nhằm đảm bảo:
+    Nếu canh chỉnh phần tử có thể khiến nội dung vượt ra ngoài vùng hiển thị,
+    thì trình duyệt sẽ không thực hiện canh chỉnh đó.
+ -->
+  <div class="w-[300px] justify-end-safe flex bg-cyan-400  p-4 m-5">
+    <div class="bg-blue-500 text-white border px-10 py-2">Block 1</div>
+    <div class="bg-blue-500 text-white border px-10 py-2">Block 2</div>
+    <div class="bg-blue-500 text-white border px-10 py-2">Block 3</div>
+    <div class="bg-blue-500 text-white border px-10 py-2">Block 4</div>
+    <div class="bg-blue-500 text-white border px-10 py-2">Block 5</div>
+  </div>
+
+  <p>4. justify-center : căn giữa theo hướng của trục main</p>
+  <div class="flex justify-center bg-cyan-400">
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 1</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 2</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 3</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 4</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+  </div>
+
+  <p>5. justify-between :phần tử cách đều nhau(trừ 2 phần tử đầu)
+    căn theo hướng của trục main</p>
+  <div class="flex justify-between bg-cyan-400">
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 1</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 2</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 3</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 4</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+  </div>
+  <p>6. justify-around: khoảng trống bên mỗi phần từ đều nhau,
+    căn theo hướng của trục main</p>
+  <div class="flex justify-around bg-cyan-400">
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 1</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 2</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 3</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 4</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+  </div>
+  <p>7. justify-evenly: khoảnh trống đều nhau với mọi phần tử,
+    căn theo hướng của trục main</p>
+  <div class="flex justify-evenly bg-cyan-400">
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 1</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 2</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 3</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 4</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+  </div>
+
+  <p>8. justify-stretch: kéo giãn phần tử hết cỡ theo trục main// Not working :
+    https://stackoverflow.com/questions/52106717/why-doesnt-justify-content-stretch-work</p>
+  <div class="flex justify-stretch bg-cyan-400">
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 1</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 2</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 3</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 4</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+  </div>
+
+  <p class="mt-5 text-xl font-bold">
+    3. align-items 89.3: Định vị item theo trục cross axis</p>
+  <p>3.1: align-items: stretch (mặc định)</p>
+  <div class="flex items-stretch bg-cyan-400">
+    <div class="bg-blue-500 text-white border px-3 py-1 h-[200px]">Block 1</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 2</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 3</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 4</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+  </div>
+
+  <p>3.2: items-end: dồn về hướng start của cross axis</p>
+  <div class="flex items-end bg-cyan-400">
+    <div class="bg-blue-500 text-white border px-3 py-1 h-[200px]">Block 1</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 2</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 3</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 4</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+  </div>
+
+  <p>3.3: items-baseline: căn theo đường cơ sở</p>
+  <div class="flex items-baseline bg-cyan-400">
+    <div class="bg-blue-500 text-white border px-3 py-1 h-[200px]">Block 1</div>
+    <div class="bg-blue-500 text-white border px-3 py-1 text-5xl">Block 2</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 3</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 4</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+  </div>
+
+  <p class="text-xl font-bold">4. flex-wrap: Định vị item theo trục cross axis</p>
+  <p>4.1: flex-nowrap(mặc định)</p>
+  <div class="flex flex-nowrap bg-cyan-400 p-4">
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 1</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 2</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 3</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 4</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+  </div>
+
+  <p>4.2: flex-wrap</p>
+  <div class="flex flex-wrap bg-cyan-400 p-4">
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 1</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 2</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 3</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 4</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 6</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 7</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 8</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 9</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 10</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 11</div>
+  </div>
+
+  <p>4.2: flex-wrap</p>
+  <div class="flex flex-wrap-reverse bg-cyan-400 p-4">
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 1</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 2</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 3</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 4</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 6</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 7</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 8</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 9</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 10</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 11</div>
+  </div>
+
+  <p class="text-xl font-bold">5. align-content: dùng để căn nhiều hàng theo cross axis,
+    lưu ý: dùng kèm flex-wrap </p>
+  <p>5.1: content-stretch(mặc định): giãn hết cỡ theo cross có thể của container </p>
+  <div class="flex bg-cyan-400 flex-wrap h-[200px] content-stretch">
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 1</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 2</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 3</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 4</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 6</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 7</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 8</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 9</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 10</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 11</div>
+  </div>
+
+  <p>5.2: content-start: căn nội dung theo hướng start của cross axis</p>
+  <div class="flex bg-cyan-400 flex-wrap h-[200px] content-start">
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 1</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 2</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 3</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 4</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 5</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 6</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 7</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 8</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 9</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 10</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 11</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 11</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 11</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 11</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 11</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 11</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 11</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block 11</div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+@import "tailwindcss";
+:root {
+  --my-columns: 100px;
+}

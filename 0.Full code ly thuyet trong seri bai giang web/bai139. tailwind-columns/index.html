@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/output.css">
+
+</head>
+
+<body>
+  <!-- 1. Chia cột theo số lượng – columns-<number>-->
+  <div class="columns-3 mb-3">
+    <p class="bg-blue-500">Box 1</p>
+    <p class="bg-blue-500">Box 2</p>
+    <p class="bg-blue-500">Box 3</p>
+    <p class="bg-blue-500">Box 4</p>
+    <p class="bg-blue-500">Box 5</p>
+    <p class="bg-blue-500">Box 6</p>
+  </div>
+
+  <div class="columns-3 mb-3">
+    <p>lorem*10</p>
+  </div>
+  <!-- 2. Chia cột theo kích cỡ có sẵn của tailwind 3xs, 2xs, xs, sm, md...-->
+  <div class="columns-3xs mb-3">
+    <p>lorem*10</p>
+  </div>
+
+  <!-- 3. columns-[<value>]: truyền đơn vị bất kỳ px, em , rem.. -->
+  <div class="columns-[201px] mb-3">
+    <p>lorem*10</p>
+  </div>
+
+  <!--4. khai báo biến 
+  :root {
+  --my-columns: 25ch;
+  }
+  -->
+  <div class="columns-(--my-columns) mb-3">
+    <p>lorem*10</p>
+  </div>
+
+
+  <!-- 5.responsive -->
+  <div class="columns-2 md:columns-3 mb-3">
+    <p>lorem*10</p>
+  </div>
+
+</body>
+
+</html>

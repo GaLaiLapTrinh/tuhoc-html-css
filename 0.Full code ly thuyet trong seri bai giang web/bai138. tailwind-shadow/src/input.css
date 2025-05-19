@@ -1,0 +1,6 @@
+@import "tailwindcss";
+:root {
+  /* box-shadow: <offset-x> <offset-y> <blur-radius> <spread-radius> <color> */
+
+  --my-shadow: 10px 10px 15px 3px rgba(255, 0, 0, 0.3);
+}

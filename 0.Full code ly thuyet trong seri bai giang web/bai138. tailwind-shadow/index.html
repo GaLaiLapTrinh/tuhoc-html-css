@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/output.css">
+
+</head>
+
+<body class="p-4">
+
+</body>
+
+<!-- 1. Nhóm Shadow Mặc Định (Từ nhẹ đến mạnh) -->
+<div class="p-4 m-5 w-40 shadow-md rounded-2xl">Shadow md</div>
+<div class="p-4 m-5 w-40 shadow-md/40 rounded-2xl">Shadow md</div>
+
+<!-- 2.custom value  -->
+<div class="p-4 m-5 w-40 shadow-(--my-shadow) rounded-2xl">custom value</div>
+<!-- 3. Màu cho shadow -->
+<div class="p-4 m-5 w-40 shadow-md/40 rounded-2xl shadow-purple-500">Shadow md</div>
+
+<!-- 4. Đổ shadow vào trong phần tử( mặc định shadow đổ ra ngoài) -->
+<div class="p-4 m-5 w-40 inset-shadow-sm rounded-2xl">inset Shadow</div>
+
+<!-- inset-ring  --tw-inset-ring-shadow: inset 0 0 0 1px
+     <offset-x> <offset-y> <blur-radius> <spread-radius>
+-->
+<div class="p-4 m-5 w-40 rounded-2xl inset-ring-4 inset-ring-blue-500/70">Shadow</div>
+<div class="p-4 m-5 w-40 rounded-2xl ring-4 ring-blue-500/70">Shadow</div>
+
+</html>
