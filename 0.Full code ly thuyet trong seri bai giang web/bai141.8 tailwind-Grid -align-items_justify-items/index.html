@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/output.css">
+  <!-- Khói học tailwind css tại tuhoc.cc -->
+</head>
+
+<body class="">
+  <!-- kiến thức liên quan grid từ 92.1 đến 92.8  -->
+  <p class="text-xl font-bold">1. Tìm hiểu grid, nhắc lại kiến thức bài 89.1</p>
+  <!-- 1.1 Khi đặt class cho khối cha là grid hoặc inline-grid thì tất cả các phần tử rời khỏi luồng 
+    thông thường và tuân theo quy tắc lưới của grid-->
+  <p class="text-xl font-bold">Theo mặc định, có 1 cột và 1 hàng</p>
+  <div class="grid bg-cyan-400">
+    <div class="bg-blue-500 text-white border px-3 py-1">Block1</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block2</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block3</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block4</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block5</div>
+  </div>
+
+  <div class="inline-grid bg-cyan-400">
+    <div class="bg-blue-500 text-white border px-3 py-1">Block1</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block2</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block3</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block4</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block5</div>
+  </div>
+
+
+  <p class="text-xl font-bold">2. grid-cols: chia cột trong grid </p>
+  <!-- kiến thức liên quan đến bài 92.2 -->
+  <p class="text-xl font-bold">2.1 grid-cols-number: chia thành number cột đều nhau</p>
+
+  <div class="grid-cols-3 grid bg-cyan-400">
+    <div class="bg-blue-500 text-white border px-3 py-1">Block1</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block2</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block3</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block4</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block5</div>
+  </div>
+
+
+  <p class="text-xl font-bold">2.2 grid-cols-none: reset lại cấu trúc cột, dùng khi responsive</p>
+  <div class="md:grid-cols-3 grid-cols-none grid bg-cyan-400">
+    <div class="bg-blue-500 text-white border px-3 py-1">Block1</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block2</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block3</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block4</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block5</div>
+  </div>
+  <p class="text-xl font-bold">2.3 grid-cols-[value]:
+    Khi bạn cần cột có độ rộng không đều, hoặc giá trị lặp phức tạp.</p>
+  <div class="grid-cols-[repeat(5,150px)] grid bg-cyan-400">
+    <div class="bg-blue-500 text-white border px-3 py-1">Block1</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block2</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block3</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block4</div>
+    <div class="bg-blue-500 text-white border px-3 py-1">Block5</div>
+  </div>
+
+
+  <p class="text-xl font-bold">2.4 grid-cols-subgrid: cho phép item con kế thừa bố cục grid của
+    item cha (chỉ hoạt động khi cha cũng là grid).</p>
+  <!-- https://caniuse.com/css-subgrid lưu ý 1 số trình duyệt 0 hỗ trợ -->
+
+  <div class="grid grid-cols-4 gap-4">
+    <div class="border">1</div>
+    <div class="border">2</div>
+    <div class="border">3</div>
+    <div class="border">4</div>
+    <div class="border">5</div>
+    <div class="border col-span-3 grid grid-cols-subgrid gap-4">
+      <div class="border col-start-2">06</div>
+    </div>
+  </div>
+
+  <p class="text-xl font-bold">3. grid-template-rows: chia cột trong grid</p>
+  <p class="text-xl font-bold">3.1 grid-rows-number: chia thành number hàng đều nhau</p>
+
+  <div class="bg-amber-400 grid gap-2 h-[300px] grid-rows-3">
+    <div class="bg-blue-500 text-white p-2">Item 1</div>
+    <div class="bg-blue-500 text-white p-2">Item 2</div>
+    <div class="bg-blue-500 text-white p-2">Item 3</div>
+  </div>
+
+  <p class="text-xl font-bold">3.2 grid-rows-value: chia hàng tuỳ chỉnh theo giá trị truyền vào</p>
+  <div class="bg-amber-400 grid gap-2 h-[300px] grid-rows-[50px_repeat(2,100px)]">
+    <div class="bg-blue-500 text-white p-2">Item 1</div>
+    <div class="bg-blue-500 text-white p-2">Item 2</div>
+    <div class="bg-blue-500 text-white p-2">Item 3</div>
+  </div>
+
+  <p class="text-xl font-bold">3.3 grid-rows-subgrid - Check Ví dụ </p>
+
+
+  <p class="text-xl font-bold">4. grid-column</p>
+  <p class="text-xl font-bold">4.1 col-span-number: chỉ định item chiếm bao nhiêu cột</p>
+  <div class="bg-amber-200 grid grid-cols-3 gap-2">
+    <div class="bg-blue-500 text-white p-4">Item 1</div>
+    <div class="bg-blue-500 text-white p-4">Item 2</div>
+    <div class="bg-blue-500 text-white p-4">Item 3</div>
+    <div class="bg-blue-500 text-white p-4 col-span-2">Item 4</div>
+    <div class="bg-blue-500 text-white p-4">Item 5</div>
+    <div class="bg-blue-500 text-white p-4 col-span-full">Item 6</div>
+    <div class="bg-blue-500 text-white p-4">Item 7</div>
+  </div>
+
+
+  <p class="text-xl font-bold">4.2 Starting and ending lines: chỉ định cột bắt đầu từ line nào và kết thúc ở line nào
+  </p>
+  <div class="grid grid-cols-6 gap-4">
+    <div class="col-span-4 col-start-2 bg-blue-500 text-white p-4">01</div>
+    <div class="col-start-1 col-end-3 bg-blue-500 text-white p-4">02</div>
+    <div class="col-span-2 col-end-7 bg-blue-500 text-white p-4">03</div>
+    <div class="col-start-1 col-end-7 bg-blue-500 text-white p-4">04</div>
+  </div>
+
+  <p class="text-xl font-bold">5. grid-row: Tự tìm hiểu</p>
+
+
+  <p class="text-xl font-bold">6. grid-auto-flow</p>
+  <!-- bài 92.7 series web http://web.tuhoc.cc -->
+  <p class="text-xl font-bold">6.1 grid-flow-row: mặc định - Trái - Phải - Chạm tới hạn của cột thì bẻ xuống dòng </p>
+  <div class="bg-amber-200 grid gap-2 grid-cols-2 grid-flow-row">
+    <div class="bg-blue-500 text-white p-2">Item 1</div>
+    <div class="bg-blue-500 text-white p-2">Item 2</div>
+    <div class="bg-blue-500 text-white p-2">Item 3</div>
+    <div class="bg-blue-500 text-white p-2">Item 4</div>
+    <div class="bg-blue-500 text-white p-2">Item 5</div>
+    <div class="bg-blue-500 text-white p-2">Item 6</div>
+    <div class="bg-blue-500 text-white p-2">Item 7</div>
+    <div class="bg-blue-500 text-white p-2">Item 8</div>
+  </div>
+  <p class="text-xl font-bold">6.2 grid-flow-col: Trên - dưới - Chạm tới hạn dòng thì thêm cột mới</p>
+
+
+  <div class="bg-amber-200 grid gap-2 grid-cols-2 grid-flow-col m-4 grid-rows-3">
+    <div class="bg-blue-500 text-white p-2">Item 1</div>
+    <div class="bg-blue-500 text-white p-2">Item 2</div>
+    <div class="bg-blue-500 text-white p-2">Item 3</div>
+    <div class="bg-blue-500 text-white p-2">Item 4</div>
+    <div class="bg-blue-500 text-white p-2">Item 5</div>
+    <div class="bg-blue-500 text-white p-2">Item 6</div>
+    <div class="bg-blue-500 text-white p-2">Item 7</div>
+    <div class="bg-blue-500 text-white p-2">Item 8</div>
+  </div>
+  <p class="text-xl font-bold">6.3 grid-flow-row-dense:
+    Mặc định khi dùng row span, nếu một item lớn chiếm nhiều ô,
+    browser sẽ nhảy qua và không quay lại điền chỗ trống,
+    còn dense sẽ cố gắng lấp
+    lại những chỗ đó. </p>
+  <div class="bg-amber-200 grid gap-2 grid-cols-3 grid-flow-row-dense">
+    <div class="bg-blue-500 text-white p-2">Item 1</div>
+    <div class="bg-blue-500 text-white p-2">Item 2</div>
+    <div class="bg-blue-500 text-white p-2 col-span-2">Item 3</div>
+    <div class="bg-blue-500 text-white p-2">Item 4</div>
+    <div class="bg-blue-500 text-white p-2">Item 5</div>
+    <div class="bg-blue-500 text-white p-2">Item 6</div>
+    <div class="bg-blue-500 text-white p-2">Item 7</div>
+    <div class="bg-blue-500 text-white p-2">Item 8</div>
+  </div>
+
+
+  <p class="text-xl font-bold">6.4 grid-flow-col </p>
+
+  <div class="bg-amber-200 grid gap-2 grid-rows-3 grid-flow-col">
+    <div class="bg-blue-500 text-white p-2">Item 1</div>
+    <div class="bg-blue-500 text-white p-2">Item 2</div>
+    <div class="bg-blue-500 text-white p-2 row-span-2">Item 3</div>
+    <div class="bg-blue-500 text-white p-2">Item 4</div>
+    <div class="bg-blue-500 text-white p-2">Item 5</div>
+    <div class="bg-blue-500 text-white p-2">Item 6</div>
+    <div class="bg-blue-500 text-white p-2">Item 7</div>
+    <div class="bg-blue-500 text-white p-2">Item 8</div>
+  </div>
+
+
+  <p class="text-xl font-bold">6.5 grid-flow-col-dense </p>
+
+  <div class="bg-amber-200 grid gap-2 grid-rows-3 grid-flow-col-dense">
+    <div class="bg-blue-500 text-white p-2">Item 1</div>
+    <div class="bg-blue-500 text-white p-2">Item 2</div>
+    <div class="bg-blue-500 text-white p-2 row-span-2">Item 3</div>
+    <div class="bg-blue-500 text-white p-2">Item 4</div>
+    <div class="bg-blue-500 text-white p-2">Item 5</div>
+    <div class="bg-blue-500 text-white p-2">Item 6</div>
+    <div class="bg-blue-500 text-white p-2">Item 7</div>
+    <div class="bg-blue-500 text-white p-2">Item 8</div>
+  </div>
+
+  <p class="text-xl font-bold">7. grid-auto-columns: xác định kích thước của các cột grid được tạo ra “ngầm định” </p>
+  <!-- grid-auto-columns là thuộc tính dùng để xác định kích thước của các cột grid được tạo ra “ngầm định” 
+   khi bạn thêm item vào grid vượt quá số cột đã định nghĩa (ví dụ: grid-cols-3),
+    hoặc khi có các item tự chiếm thêm cột bằng cách dùng col-start, col-end, 
+    hoặc span lớn hơn số cột khai báo.
+  Nói cách khác: Khi grid phát sinh thêm cột (do item tràn hoặc dùng col-start nhảy cột),
+   grid-auto-columns sẽ quyết định chiều rộng của các cột mới này. -->
+
+  <p class="text-xl font-bold">7.1 auto-cols-auto: tự động </p>
+  <div class="bg-amber-200 grid grid-cols-2 gap-2 auto-cols-auto">
+    <div class="bg-blue-500 text-white p-2">Item 1</div>
+    <div class="bg-blue-500 text-white p-2">Item 2</div>
+    <div class="bg-blue-500 text-white p-2 col-start-3">Cột mới </div>
+  </div>
+
+
+
+  <p class="text-xl font-bold">7.2 auto-cols-min: ép phần tử về min kích thước</p>
+  <div class="bg-amber-200 grid grid-cols-2 gap-2 auto-cols-min">
+    <div class="bg-blue-500 text-white p-2">Item 1</div>
+    <div class="bg-blue-500 text-white p-2">Item 2</div>
+    <div class="bg-blue-500 text-white p-2 col-start-3">Cột mới</div>
+  </div>
+
+
+  <p class="text-xl font-bold">7.3 auto-cols-max: Cột mới rộng nhất có thể, đủ để chứa toàn bộ nội dung lớn nhất.</p>
+  <div class="bg-amber-200 grid grid-cols-2 gap-2 auto-cols-max">
+    <div class="bg-blue-500 text-white p-2">Item 1</div>
+    <div class="bg-blue-500 text-white p-2">Item 2</div>
+    <div class="bg-blue-500 text-white p-2 col-start-3">Cột mới</div>
+  </div>
+
+  <p class="text-xl font-bold">7.4 auto-cols-value: Cột mới sinh ra có độ kích thước cụ thể</p>
+  <div class="bg-amber-200 grid grid-cols-2 gap-2 auto-cols-[200px]">
+    <div class="bg-blue-500 text-white p-2">Item 1</div>
+    <div class="bg-blue-500 text-white p-2">Item 2</div>
+    <div class="bg-blue-500 text-white p-2 col-start-3">Cột mới</div>
+  </div>
+
+
+  <p class="text-xl font-bold">8. grid-auto-row: xác định kích thước của các dòng grid được tạo ra “ngầm định” </p>
+
+  <div class="bg-amber-200 grid grid-cols-2 grid-rows-[100px_100px] gap-2">
+    <div class="bg-blue-500 text-white p-2">Item 1</div>
+    <div class="bg-blue-500 text-white p-2">Item 2</div>
+    <div class="bg-blue-500 text-white p-2">Item 3</div>
+    <div class="bg-blue-500 text-white p-2">Item 4</div>
+    <div class="bg-blue-500 text-white p-2">Item 5</div>
+    <div class="bg-blue-500 text-white p-2">Item 6</div>
+    <div class="bg-blue-500 text-white p-2">Item 7</div>
+  </div>
+  <p class="text-xl font-bold">8.1 auto-rows-fr: xác định kích thước của dòng được tạo ra mặc định </p>
+  <div class="bg-amber-200 grid grid-cols-2 grid-rows-[100px_100px] gap-2 auto-rows-fr h-[500px]">
+    <div class="bg-blue-500 text-white p-2">Item 1</div>
+    <div class="bg-blue-500 text-white p-2">Item 2</div>
+    <div class="bg-blue-500 text-white p-2">Item 3</div>
+    <div class="bg-blue-500 text-white p-2">Item 4</div>
+    <div class="bg-blue-500 text-white p-2">Item 5</div>
+    <div class="bg-blue-500 text-white p-2">Item 6</div>
+    <div class="bg-blue-500 text-white p-2">Item 7</div>
+  </div>
+
+
+  <p class="text-xl font-bold">9.align-items : Căn chỉnh vị trí của nội dung bên trong từng phần tử con theo trục dọc
+    (theo chiều cao của hàng/row).
+  </p>
+  <!-- kiến thức liên quan bài 92.5 -->
+  <p class="text-xl font-bold">9.1 items-stretch :(Mặc định) Các item sẽ bị kéo giãn để vừa với chiều cao của từng row
+  </p>
+  <div class="bg-amber-200 grid grid-cols-[100px_150px] grid-rows-[50px_100px] gap-4 items-stretch">
+    <div class="bg-blue-500 text-white p-2">Item 1</div>
+    <div class="bg-blue-500 text-white p-2">Item 2</div>
+    <div class="bg-blue-500 text-white p-2">Item 3</div>
+    <div class="bg-blue-500 text-white p-2">Item 4</div>
+  </div>
+
+
+  <p class="text-xl font-bold">9.2 items-start :Dồn nội dung về phía trên (start) của mỗi row
+  </p>
+  <div class="bg-amber-200 grid grid-cols-[100px_150px] grid-rows-[50px_100px] gap-4 items-start">
+    <div class="bg-blue-500 text-white p-2">Item 1</div>
+    <div class="bg-blue-500 text-white p-2">Item 2</div>
+    <div class="bg-blue-500 text-white p-2">Item 3</div>
+    <div class="bg-blue-500 text-white p-2">Item 4</div>
+  </div>
+
+  <p class="text-xl font-bold">9.3 items-end :Dồn nội dung về phía trên (end) của mỗi row
+  </p>
+  <div class="bg-amber-200 grid grid-cols-[100px_150px] grid-rows-[50px_100px] gap-4 items-end">
+    <div class="bg-blue-500 text-white p-2">Item 1</div>
+    <div class="bg-blue-500 text-white p-2">Item 2</div>
+    <div class="bg-blue-500 text-white p-2">Item 3</div>
+    <div class="bg-blue-500 text-white p-2">Item 4</div>
+  </div>
+
+
+  <p class="text-xl font-bold">10.Căn chỉnh nội dung bên trong từng item trên trục ngang (chiều ngang của mỗi cột).
+  </p>
+  <p class="text-xl font-bold">10.1 justify-items-stretch :(mặc định) Kéo giãn nội dung để lấp đầy chiều ngang cột.
+    của cột
+  </p>
+
+  <div class="bg-amber-200 grid grid-cols-[100px_150px] grid-rows-[50px_100px] gap-4 justify-items-stretch">
+    <div class="bg-blue-500 text-white p-2">Item 1</div>
+    <div class="bg-blue-500 text-white p-2">Item 2</div>
+    <div class="bg-blue-500 text-white p-2">Item 3</div>
+    <div class="bg-blue-500 text-white p-2">Item 4</div>
+  </div>
+  <p class="text-xl font-bold">10.2 items-start :Dồn về bên trái cột.
+  </p>
+
+  <div class="bg-amber-200 grid grid-cols-[100px_150px] grid-rows-[50px_100px] gap-4 justify-items-start">
+    <div class="bg-blue-500 text-white p-2">Item 1</div>
+    <div class="bg-blue-500 text-white p-2">Item 2</div>
+    <div class="bg-blue-500 text-white p-2">Item 3</div>
+    <div class="bg-blue-500 text-white p-2">Item 4</div>
+  </div>
+
+  <p class="text-xl font-bold">10.3 items-center :
+  </p>
+
+  <div class="bg-amber-200 grid grid-cols-[100px_150px] grid-rows-[50px_100px] gap-4 justify-items-center">
+    <div class="bg-blue-500 text-white p-2">Item 1</div>
+    <div class="bg-blue-500 text-white p-2">Item 2</div>
+    <div class="bg-blue-500 text-white p-2">Item 3</div>
+    <div class="bg-blue-500 text-white p-2">Item 4</div>
+  </div>
+
+</body>
+
+</html>

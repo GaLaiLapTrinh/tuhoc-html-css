@@ -7,7 +7,9 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-cyan-400: oklch(78.9% 0.154 211.53);
+    --color-blue-50: oklch(97% 0.014 254.604);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-slate-100: oklch(96.8% 0.007 247.896);
     --color-slate-200: oklch(92.9% 0.013 255.508);
@@ -192,6 +194,9 @@
   .col-start-2 {
     grid-column-start: 2;
   }
+  .row-span-4 {
+    grid-row: span 4 / span 4;
+  }
   .-mt-4 {
     margin-top: calc(var(--spacing) * -4);
   }
@@ -212,6 +217,42 @@
     width: calc(var(--spacing) * 20);
     height: calc(var(--spacing) * 20);
   }
+  .h-\[00px\] {
+    height: 00px;
+  }
+  .h-\[2\] {
+    height: 2;
+  }
+  .h-\[3\] {
+    height: 3;
+  }
+  .h-\[20\] {
+    height: 20;
+  }
+  .h-\[30\] {
+    height: 30;
+  }
+  .h-\[200\] {
+    height: 200;
+  }
+  .h-\[200p\] {
+    height: 200p;
+  }
+  .h-\[200px\] {
+    height: 200px;
+  }
+  .h-\[300\] {
+    height: 300;
+  }
+  .h-\[300p\] {
+    height: 300p;
+  }
+  .h-\[300px\] {
+    height: 300px;
+  }
+  .h-\[400px\] {
+    height: 400px;
+  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -230,74 +271,8 @@
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
-  .grid-cols-\[a\] {
-    grid-template-columns: a;
-  }
-  .grid-cols-\[au\] {
-    grid-template-columns: au;
-  }
-  .grid-cols-\[aut\] {
-    grid-template-columns: aut;
-  }
-  .grid-cols-\[auto\] {
-    grid-template-columns: auto;
-  }
-  .grid-cols-\[auto_1\] {
-    grid-template-columns: auto 1;
-  }
-  .grid-cols-\[auto_1f\] {
-    grid-template-columns: auto 1f;
-  }
-  .grid-cols-\[auto_1fr\] {
-    grid-template-columns: auto 1fr;
-  }
-  .grid-cols-\[auto_1fr_\] {
-    grid-template-columns: auto 1fr ;
-  }
-  .grid-cols-\[auto_1fr_a\] {
-    grid-template-columns: auto 1fr a;
-  }
-  .grid-cols-\[auto_1fr_au\] {
-    grid-template-columns: auto 1fr au;
-  }
-  .grid-cols-\[auto_1fr_aut\] {
-    grid-template-columns: auto 1fr aut;
-  }
-  .grid-cols-\[auto_1fr_auto\] {
-    grid-template-columns: auto 1fr auto;
-  }
-  .grid-cols-\[auto_1fr_auto_\] {
-    grid-template-columns: auto 1fr auto ;
-  }
-  .grid-cols-\[auto_1fr_auto_a\] {
-    grid-template-columns: auto 1fr auto a;
-  }
-  .grid-cols-\[auto_1fr_auto_au\] {
-    grid-template-columns: auto 1fr auto au;
-  }
-  .grid-cols-\[auto_1fr_auto_aut\] {
-    grid-template-columns: auto 1fr auto aut;
-  }
-  .grid-cols-\[auto_1fr_auto_auto\] {
-    grid-template-columns: auto 1fr auto auto;
-  }
-  .grid-cols-\[auto_1fr_auto_auto_\] {
-    grid-template-columns: auto 1fr auto auto ;
-  }
-  .grid-cols-\[auto_1fr_auto_auto_a\] {
-    grid-template-columns: auto 1fr auto auto a;
-  }
-  .grid-cols-\[auto_1fr_auto_auto_au\] {
-    grid-template-columns: auto 1fr auto auto au;
-  }
-  .grid-cols-\[auto_1fr_auto_auto_aut\] {
-    grid-template-columns: auto 1fr auto auto aut;
-  }
   .grid-cols-\[auto_1fr_auto_auto_auto\] {
     grid-template-columns: auto 1fr auto auto auto;
-  }
-  .grid-cols-\[auto_\] {
-    grid-template-columns: auto ;
   }
   .grid-cols-\[repeat\(5\,150px\)\] {
     grid-template-columns: repeat(5,150px);
@@ -311,17 +286,188 @@
   .grid-cols-subgrid {
     grid-template-columns: subgrid;
   }
+  .grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
+  .grid-rows-3 {
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+  }
+  .grid-rows-\[5\] {
+    grid-template-rows: 5;
+  }
+  .grid-rows-\[50\] {
+    grid-template-rows: 50;
+  }
+  .grid-rows-\[50p\] {
+    grid-template-rows: 50p;
+  }
+  .grid-rows-\[50px\] {
+    grid-template-rows: 50px;
+  }
+  .grid-rows-\[50px_1\] {
+    grid-template-rows: 50px 1;
+  }
+  .grid-rows-\[50px_10\] {
+    grid-template-rows: 50px 10;
+  }
+  .grid-rows-\[50px_100\] {
+    grid-template-rows: 50px 100;
+  }
+  .grid-rows-\[50px_100p\] {
+    grid-template-rows: 50px 100p;
+  }
+  .grid-rows-\[50px_100px\] {
+    grid-template-rows: 50px 100px;
+  }
+  .grid-rows-\[50px_100px_1\] {
+    grid-template-rows: 50px 100px 1;
+  }
+  .grid-rows-\[50px_100px_10\] {
+    grid-template-rows: 50px 100px 10;
+  }
+  .grid-rows-\[50px_100px_100\] {
+    grid-template-rows: 50px 100px 100;
+  }
+  .grid-rows-\[50px_100px_100p\] {
+    grid-template-rows: 50px 100px 100p;
+  }
+  .grid-rows-\[50px_100px_100px\] {
+    grid-template-rows: 50px 100px 100px;
+  }
+  .grid-rows-\[50px_100px_\] {
+    grid-template-rows: 50px 100px ;
+  }
+  .grid-rows-\[50px_\] {
+    grid-template-rows: 50px ;
+  }
+  .grid-rows-\[50px_r\] {
+    grid-template-rows: 50px r;
+  }
+  .grid-rows-\[50px_re\] {
+    grid-template-rows: 50px re;
+  }
+  .grid-rows-\[50px_rep\] {
+    grid-template-rows: 50px rep;
+  }
+  .grid-rows-\[50px_repe\] {
+    grid-template-rows: 50px repe;
+  }
+  .grid-rows-\[50px_repea\] {
+    grid-template-rows: 50px repea;
+  }
+  .grid-rows-\[50px_repeat\(\)\] {
+    grid-template-rows: 50px repeat();
+  }
+  .grid-rows-\[50px_repeat\(2\)\] {
+    grid-template-rows: 50px repeat(2);
+  }
+  .grid-rows-\[50px_repeat\(2\,\)\] {
+    grid-template-rows: 50px repeat(2,);
+  }
+  .grid-rows-\[50px_repeat\(2\,1\)\] {
+    grid-template-rows: 50px repeat(2,1);
+  }
+  .grid-rows-\[50px_repeat\(2\,10\)\] {
+    grid-template-rows: 50px repeat(2,10);
+  }
+  .grid-rows-\[50px_repeat\(2\,100\)\] {
+    grid-template-rows: 50px repeat(2,100);
+  }
+  .grid-rows-\[50px_repeat\(2\,100p\)\] {
+    grid-template-rows: 50px repeat(2,100p);
+  }
+  .grid-rows-\[50px_repeat\(2\,100px\)\] {
+    grid-template-rows: 50px repeat(2,100px);
+  }
+  .grid-rows-\[50px_repeat\] {
+    grid-template-rows: 50px repeat;
+  }
+  .grid-rows-\[50px_rê\] {
+    grid-template-rows: 50px rê;
+  }
+  .grid-rows-\[50px_rêp\] {
+    grid-template-rows: 50px rêp;
+  }
+  .grid-rows-\[50px_rêpa\] {
+    grid-template-rows: 50px rêpa;
+  }
+  .grid-rows-\[50px_rêpat\] {
+    grid-template-rows: 50px rêpat;
+  }
+  .grid-rows-\[a\] {
+    grid-template-rows: a;
+  }
+  .grid-rows-\[au\] {
+    grid-template-rows: au;
+  }
+  .grid-rows-\[aut\] {
+    grid-template-rows: aut;
+  }
+  .grid-rows-\[auto\] {
+    grid-template-rows: auto;
+  }
+  .grid-rows-\[auto_1\] {
+    grid-template-rows: auto 1;
+  }
+  .grid-rows-\[auto_1f\] {
+    grid-template-rows: auto 1f;
+  }
+  .grid-rows-\[auto_1fr\] {
+    grid-template-rows: auto 1fr;
+  }
+  .grid-rows-\[auto_1fr_\] {
+    grid-template-rows: auto 1fr ;
+  }
+  .grid-rows-\[auto_1fr_a\] {
+    grid-template-rows: auto 1fr a;
+  }
+  .grid-rows-\[auto_1fr_at\] {
+    grid-template-rows: auto 1fr at;
+  }
+  .grid-rows-\[auto_1fr_atu\] {
+    grid-template-rows: auto 1fr atu;
+  }
+  .grid-rows-\[auto_1fr_atut\] {
+    grid-template-rows: auto 1fr atut;
+  }
+  .grid-rows-\[auto_1fr_atuto\] {
+    grid-template-rows: auto 1fr atuto;
+  }
+  .grid-rows-\[auto_1fr_au\] {
+    grid-template-rows: auto 1fr au;
+  }
+  .grid-rows-\[auto_1fr_auto\] {
+    grid-template-rows: auto 1fr auto;
+  }
+  .grid-rows-\[auto_1fr_auto_\] {
+    grid-template-rows: auto 1fr auto ;
+  }
+  .grid-rows-\[auto_1fr_auto_a\] {
+    grid-template-rows: auto 1fr auto a;
+  }
+  .grid-rows-\[auto_1fr_auto_au\] {
+    grid-template-rows: auto 1fr auto au;
+  }
+  .grid-rows-\[auto_1fr_auto_aut\] {
+    grid-template-rows: auto 1fr auto aut;
+  }
+  .grid-rows-\[auto_1fr_auto_auto\] {
+    grid-template-rows: auto 1fr auto auto;
+  }
+  .grid-rows-\[auto_\] {
+    grid-template-rows: auto ;
+  }
+  .grid-rows-subgrid {
+    grid-template-rows: subgrid;
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
-  }
-  .gap-x-6 {
-    column-gap: calc(var(--spacing) * 6);
-  }
-  .gap-y-6 {
-    row-gap: calc(var(--spacing) * 6);
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
@@ -338,6 +484,12 @@
   }
   .border-slate-600 {
     border-color: var(--color-slate-600);
+  }
+  .bg-amber-400 {
+    background-color: var(--color-amber-400);
+  }
+  .bg-blue-50 {
+    background-color: var(--color-blue-50);
   }
   .bg-blue-500 {
     background-color: var(--color-blue-500);
@@ -359,6 +511,9 @@
   }
   .object-cover {
     object-fit: cover;
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
